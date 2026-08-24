@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "structurre",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["--yes", "serve", "."],
+      "port": 4321,
+      "autoPort": true
+    }
+  ]
+}
