@@ -96,7 +96,7 @@
       .catch(function (error) {
         console.error(error);
         setStatus(
-          "L'envoi a échoué. Réessayez ou écrivez-nous directement à contact@structurre.fr.",
+          "L'envoi a échoué. Réessayez ou écrivez-nous directement à simon@structurre.fr.",
           "error"
         );
       })

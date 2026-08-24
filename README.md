@@ -173,9 +173,14 @@ d'envoyer un message vers **votre** adresse. Le formulaire embarque un pot de mi
 
 ## 6. Avant la mise en ligne — check-list
 
-- [ ] Remplacer les textes de démonstration (chiffres clés de l'accueil, témoignage)
-- [ ] Téléphone `01 00 00 00 00`, e-mail et adresse — présents dans le header, le footer,
-      `contact.html` et le bloc JSON-LD de `index.html`
+- [ ] Remplacer les textes de démonstration (chiffres clés de l'accueil)
+- [ ] Témoignage : la signature est réelle (Maître Cécile Marchal, Cabinet MARCHAL AVOCAT),
+      mais **le texte de la citation reste celui de démonstration** — le remplacer par ses mots
+      et obtenir son accord écrit avant la mise en ligne
+- [x] Téléphone `06 80 89 96 25` et e-mail `simon@structurre.fr` — renseignés dans le header,
+      le footer, `contact.html`, `assets/js/contact.js` et le bloc JSON-LD de `index.html`
+- [ ] Adresse postale : `9 rue de l'Ehn, Strasbourg` — **code postal manquant**, à ajouter
+      dans le footer des 8 pages, `contact.html`, `mentions-legales.html` et le JSON-LD
 - [ ] Compléter `mentions-legales.html` (SIRET, éditeur, hébergeur réellement utilisé)
 - [ ] Renseigner la clé du formulaire
 - [ ] **Tarifs** : vérifier que le décompte des 4 heures de formation décrit sur
