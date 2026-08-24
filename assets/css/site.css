@@ -23,7 +23,7 @@ body {
   }
 }
 
-/* Apparition au scroll (piloté par IntersectionObserver dans main.js) */
+/* Apparition au scroll (piloté par main.js) */
 [data-reveal] {
   opacity: 0;
   transform: translateY(16px);

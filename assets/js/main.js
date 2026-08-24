@@ -68,23 +68,49 @@
    * 4. Apparition au scroll
    * ----------------------------------------------------------------- */
   function initReveal() {
-    var items = document.querySelectorAll("[data-reveal]");
+    var items = Array.prototype.slice.call(document.querySelectorAll("[data-reveal]"));
     if (!items.length) return;
-    if (!("IntersectionObserver" in window)) {
-      items.forEach(function (el) { el.classList.add("is-visible"); });
-      return;
+
+    var ticking = false;
+    var ro = null;
+
+    function check() {
+      ticking = false;
+      var h = window.innerHeight || document.documentElement.clientHeight;
+      // Un simple test de position couvre aussi les éléments franchis d'un seul
+      // coup (scroll rapide, ancre, retour arrière) — cas où un
+      // IntersectionObserver ne déclencherait jamais.
+      items = items.filter(function (el) {
+        if (el.getBoundingClientRect().top >= h * 0.9) return true;
+        el.classList.add("is-visible");
+        return false;
+      });
+      if (!items.length) {
+        window.removeEventListener("scroll", onScroll);
+        window.removeEventListener("resize", onScroll);
+        window.removeEventListener("load", onScroll);
+        if (ro) ro.disconnect();
+      }
     }
-    var io = new IntersectionObserver(
-      function (entries) {
-        entries.forEach(function (entry) {
-          if (!entry.isIntersecting) return;
-          entry.target.classList.add("is-visible");
-          io.unobserve(entry.target);
-        });
-      },
-      { rootMargin: "0px 0px -10% 0px", threshold: 0.1 }
-    );
-    items.forEach(function (el) { io.observe(el); });
+
+    function onScroll() {
+      if (ticking) return;
+      ticking = true;
+      window.requestAnimationFrame(check);
+    }
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll);
+    window.addEventListener("load", onScroll);
+
+    // La hauteur de page bouge encore après le premier rendu (polices, images,
+    // CSS chargée tardivement) : on re-teste à chaque changement de gabarit.
+    if ("ResizeObserver" in window) {
+      ro = new ResizeObserver(onScroll);
+      ro.observe(document.body);
+    }
+
+    check();
   }
 
   /* ------------------------------------------------------------------
@@ -99,7 +125,10 @@
     document.querySelectorAll("[data-nav-link]").forEach(function (link) {
       var target = link.getAttribute("data-nav-link");
       if (target === page || (page === "" && target === "index")) {
-        link.classList.add("text-amber-700");
+        // On retire la couleur par défaut : deux classes de couleur Tailwind
+        // sur le même élément se départagent par l'ordre du fichier CSS.
+        link.classList.remove("text-slate-700");
+        link.classList.add("text-amber-700", "font-semibold");
         link.setAttribute("aria-current", "page");
       }
     });

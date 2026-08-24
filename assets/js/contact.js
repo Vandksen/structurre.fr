@@ -46,9 +46,11 @@
 
     if (!form.reportValidity()) return;
 
-    // Pot de miel : si rempli, c'est un robot — on fait semblant d'accepter.
+    // Pot de miel : si coché/rempli, c'est un robot — on fait semblant d'accepter.
+    // (Une case à cocher renvoie toujours "on" dans .value : on teste .checked.)
     var honey = form.querySelector('input[name="botcheck"]');
-    if (honey && honey.value) {
+    var isBot = honey && (honey.type === "checkbox" ? honey.checked : honey.value !== "");
+    if (isBot) {
       setStatus("Merci, votre message a bien été envoyé.", "success");
       form.reset();
       return;
