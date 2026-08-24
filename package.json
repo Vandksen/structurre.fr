@@ -1,0 +1,14 @@
+{
+  "name": "structurre-fr",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site vitrine statique Structurre — HTML + Tailwind CSS",
+  "scripts": {
+    "build": "tailwindcss -i ./assets/css/input.css -o ./assets/css/tailwind.css --minify",
+    "watch": "tailwindcss -i ./assets/css/input.css -o ./assets/css/tailwind.css --watch",
+    "dev": "npx --yes serve . -l 3000"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.11"
+  }
+}

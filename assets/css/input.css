@@ -1,0 +1,10 @@
+/* Source Tailwind CSS v4 — compilée vers assets/css/tailwind.css
+   Build : npm run build   |   Dev : npm run watch
+   Ne pas éditer tailwind.css à la main : il est généré. */
+
+@import "tailwindcss";
+
+/* Le site n'utilise que la palette Tailwind par défaut (slate / amber / white)
+   afin que le rendu soit identique avec le build CLI et avec le compilateur
+   navigateur utilisé en secours (voir assets/js/main.js).
+   Pour changer la couleur d'accent : chercher/remplacer "amber-" dans les .html */
