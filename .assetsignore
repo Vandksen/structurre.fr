@@ -1,0 +1,21 @@
+# Fichiers présents dans le dépôt mais qui n'ont rien à faire sur le site publié.
+#
+# Le dossier de sortie déclaré dans Cloudflare Pages est la racine du dépôt (« / ») :
+# sans ce fichier, Cloudflare tente de publier node_modules, où son propre outil de
+# déploiement installe le binaire workerd (144 Mio) — au-delà de la limite de 25 Mio
+# par fichier. Syntaxe identique à .gitignore.
+
+node_modules
+
+# Sources et configuration : utiles au dépôt, inutiles aux visiteurs.
+package.json
+package-lock.json
+README.md
+vercel.json
+.github
+.claude
+assets/css/input.css
+assets/img/README.txt
+
+# À NE PAS ajouter ici : _headers et _redirects, lus par Cloudflare lui-même,
+# ni robots.txt / sitemap.xml, qui doivent rester accessibles.

@@ -26,6 +26,7 @@ Aucune base de données, aucun serveur : 100 % statique, 100 % gratuit.
 │   │   └── contact.js      Envoi du formulaire (config Web3Forms/Formspree)
 │   └── img/                logo.svg, favicon.svg, og-image.svg
 ├── _headers, _redirects    Config Cloudflare Pages
+├── .assetsignore           Exclut node_modules du site publié (Cloudflare)
 ├── vercel.json             Config Vercel
 ├── robots.txt, sitemap.xml SEO
 └── .github/workflows/      CI : vérifie que la CSS se compile
@@ -126,8 +127,14 @@ git push -u origin main
    - Framework preset : `None`
    - Build command : `npm run build`
    - Build output directory : `/`
-3. **Save and Deploy**
-4. Onglet **Custom domains** → ajoutez `structurre.fr` et `www.structurre.fr`
+3. Variables d'environnement → ajoutez `NODE_VERSION` = `20` (Tailwind v4 exige Node 20+)
+4. **Save and Deploy**
+5. Onglet **Custom domains** → ajoutez `structurre.fr` et `www.structurre.fr`
+
+Le dossier de sortie étant la racine du dépôt, Cloudflare publierait aussi `node_modules` —
+où son propre outil de déploiement installe un binaire de 144 Mio, au-delà de la limite de
+25 Mio par fichier. C'est le rôle de `.assetsignore` : **ne le supprimez pas**, le
+déploiement échouerait avec `Asset too large`.
 
 ### Option B — Vercel
 
