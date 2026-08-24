@@ -1,14 +1,17 @@
-# Cloudflare Pages — redirections
-# URLs sans extension .html
-/services      /services.html      301
-/outils        /outils.html        301
-/formation     /formation.html     301
-/tarifs        /tarifs.html        301
-/contact       /contact.html       301
-/mentions      /mentions-legales.html 301
-# Alias courants
-/prix          /tarifs.html        301
-/tarif         /tarifs.html        301
-# Ancienne page retirée lors de la refonte
-/realisations       /services.html   301
-/realisations.html  /services.html   301
+# Cloudflare Pages sert déjà les pages sans extension : /services.html est
+# accessible à /services, et Cloudflare redirige lui-même /services.html vers
+# /services.
+#
+# N'AJOUTEZ JAMAIS de règle du type « /services /services.html » : elle entre en
+# conflit avec cette redirection automatique et provoque une boucle infinie
+# (ERR_TOO_MANY_REDIRECTS). Seuls les alias vers un nom DIFFÉRENT ont leur place
+# ici.
+
+# Alias
+/mentions   /mentions-legales   301
+/prix       /tarifs             301
+/tarif      /tarifs             301
+
+# Page retirée lors de la refonte
+/realisations       /services   301
+/realisations.html  /services   301

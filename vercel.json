@@ -6,6 +6,11 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/mentions",
+      "destination": "/mentions-legales",
+      "permanent": true
+    },
+    {
       "source": "/prix",
       "destination": "/tarifs",
       "permanent": true

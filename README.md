@@ -131,10 +131,18 @@ git push -u origin main
 4. **Save and Deploy**
 5. Onglet **Custom domains** → ajoutez `structurre.fr` et `www.structurre.fr`
 
-Le dossier de sortie étant la racine du dépôt, Cloudflare publierait aussi `node_modules` —
-où son propre outil de déploiement installe un binaire de 144 Mio, au-delà de la limite de
-25 Mio par fichier. C'est le rôle de `.assetsignore` : **ne le supprimez pas**, le
-déploiement échouerait avec `Asset too large`.
+Deux pièges déjà rencontrés, à ne pas réintroduire :
+
+- **`.assetsignore`** — le dossier de sortie étant la racine du dépôt, Cloudflare publierait
+  aussi `node_modules`, où son propre outil de déploiement installe un binaire de 144 Mio.
+  Ne supprimez pas ce fichier : le déploiement échouerait avec `Asset too large`.
+- **`_redirects`** — Cloudflare sert les pages sans extension (`/services`) et redirige
+  lui-même `/services.html` vers `/services`. Une règle `/services /services.html` boucle
+  donc à l'infini (`ERR_TOO_MANY_REDIRECTS`). Seuls les alias vers un nom *différent*
+  (`/prix` → `/tarifs`) ont leur place dans ce fichier.
+
+Les liens internes, les URL canoniques et le `sitemap.xml` sont donc écrits **sans `.html`**.
+Gardez cette convention si vous ajoutez une page.
 
 ### Option B — Vercel
 
