@@ -31,13 +31,10 @@
   function setStatus(message, type) {
     if (!status) return;
     status.textContent = message;
+    // Les trois variantes sont définies dans assets/css/site.css.
     status.className =
-      "mt-4 rounded-lg border px-4 py-3 text-sm " +
-      (type === "error"
-        ? "border-red-200 bg-red-50 text-red-800"
-        : type === "success"
-        ? "border-emerald-200 bg-emerald-50 text-emerald-800"
-        : "border-slate-200 bg-slate-50 text-slate-700");
+      "message " +
+      (type === "error" ? "message-erreur" : type === "success" ? "message-ok" : "message-info");
     status.hidden = false;
   }
 

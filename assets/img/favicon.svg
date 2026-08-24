@@ -1,5 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="7" fill="#0f172a"/>
-  <path d="M5 25 16 6l11 19H5Z" fill="none" stroke="#f59e0b" stroke-width="2.4" stroke-linejoin="round"/>
-  <path d="M10.5 25 16 15.5 21.5 25" fill="none" stroke="#f59e0b" stroke-width="2.4" stroke-linejoin="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Structurre">
+  <!-- Silhouette du logotype Structurre, blanche sur le bleu d'emphase #207DFB. -->
+  <rect width="32" height="32" rx="7" fill="#207DFB"/>
+  <g transform="translate(0.99 0.86) scale(0.0602)" fill="#ffffff">
+    <path d="M271 168.5 50.5 274.5V365.5L270 384Z"/>
+    <path d="M449 221V372L270 384L271 170L311 180.5L313 132.5L353 193L373 199V152L403 190.5L414.5 121.5L430 116L437 217L449 221Z"/>
+  </g>
 </svg>

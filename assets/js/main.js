@@ -57,8 +57,7 @@
     var header = document.querySelector("[data-header]");
     if (!header) return;
     var onScroll = function () {
-      header.classList.toggle("shadow-md", window.scrollY > 8);
-      header.classList.toggle("border-slate-200", window.scrollY > 8);
+      header.classList.toggle("est-collee", window.scrollY > 8);
     };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
@@ -125,10 +124,8 @@
     document.querySelectorAll("[data-nav-link]").forEach(function (link) {
       var target = link.getAttribute("data-nav-link");
       if (target === page || (page === "" && target === "index")) {
-        // On retire la couleur par défaut : deux classes de couleur Tailwind
-        // sur le même élément se départagent par l'ordre du fichier CSS.
-        link.classList.remove("text-slate-700");
-        link.classList.add("text-amber-700", "font-semibold");
+        // .est-actif est défini dans assets/css/site.css (couleur d'emphase).
+        link.classList.add("est-actif");
         link.setAttribute("aria-current", "page");
       }
     });

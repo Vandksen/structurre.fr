@@ -4,7 +4,11 @@
 
 @import "tailwindcss";
 
-/* Le site n'utilise que la palette Tailwind par défaut (slate / amber / white)
-   afin que le rendu soit identique avec le build CLI et avec le compilateur
-   navigateur utilisé en secours (voir assets/js/main.js).
-   Pour changer la couleur d'accent : chercher/remplacer "amber-" dans les .html */
+/* Tailwind ne fournit ici QUE la mise en page : grilles, flex, espacements,
+   tailles de texte, points de rupture responsive.
+
+   Toutes les couleurs (fond blanc, texte #222222, emphase #207DFB) et tous les
+   composants (boutons, cartes, champs, navigation) vivent dans
+   assets/css/site.css, chargé après cette feuille. Le rendu est donc identique
+   que la CSS soit compilée ou non — voir le filet de sécurité dans
+   assets/js/main.js. */

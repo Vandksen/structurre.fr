@@ -6,7 +6,7 @@
 <title>Page introuvable — Structurre</title>
 <meta name="description" content="La page demandée n'existe pas ou a été déplacée.">
 <link rel="canonical" href="https://structurre.fr/404.html">
-<meta name="theme-color" content="#0f172a">
+<meta name="theme-color" content="#ffffff">
 
 <!-- Open Graph / réseaux sociaux -->
 <meta property="og:type" content="website">
@@ -28,110 +28,104 @@
 <link rel="stylesheet" href="/assets/css/tailwind.css">
 <link rel="stylesheet" href="/assets/css/site.css">
 </head>
-<body class="bg-white text-slate-700 antialiased">
-<a href="#contenu" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-slate-900 focus:px-4 focus:py-2 focus:text-white">Aller au contenu</a>
-<header data-header class="sticky top-0 z-40 border-b border-transparent bg-white/90 backdrop-blur transition-shadow">
+<body class="antialiased">
+<a href="#contenu" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-white focus:px-4 focus:py-2 focus:font-semibold focus:shadow-lg">Aller au contenu</a>
+<header data-header class="entete sticky top-0 z-40">
   <div class="mx-auto flex h-20 max-w-6xl items-center justify-between px-4 sm:px-6">
-    <a href="/index.html" class="flex items-center gap-2.5 text-slate-900">
-      <svg class="h-8 w-8 text-amber-600" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-        <path d="M4 26 16 5l12 21H4Z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
-        <path d="M10 26 16 15l6 11" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
-      </svg>
-      <span class="text-lg font-extrabold tracking-tight">Structurre</span>
+    <a href="/index.html" class="shrink-0" aria-label="Structurre — retour à l'accueil">
+      <img src="/assets/img/logo.svg" alt="Structurre" width="405" height="275" class="h-11 w-auto sm:h-14">
     </a>
 
-    <nav class="hidden items-center gap-8 md:flex" aria-label="Navigation principale">
-      <a data-nav-link="index" href="/index.html" class="text-sm font-medium text-slate-700 transition hover:text-amber-700">Accueil</a>
-      <a data-nav-link="services" href="/services.html" class="text-sm font-medium text-slate-700 transition hover:text-amber-700">Services</a>
-      <a data-nav-link="realisations" href="/realisations.html" class="text-sm font-medium text-slate-700 transition hover:text-amber-700">Réalisations</a>
-      <a data-nav-link="contact" href="/contact.html" class="text-sm font-medium text-slate-700 transition hover:text-amber-700">Contact</a>
+    <nav class="hidden items-center gap-7 lg:flex" aria-label="Navigation principale">
+      <a data-nav-link="index" href="/index.html" class="lien-nav text-sm font-medium">Accueil</a>
+      <a data-nav-link="services" href="/services.html" class="lien-nav text-sm font-medium">Services</a>
+      <a data-nav-link="outils" href="/outils.html" class="lien-nav text-sm font-medium">Outils</a>
+      <a data-nav-link="formation" href="/formation.html" class="lien-nav text-sm font-medium">Formation</a>
+      <a data-nav-link="tarifs" href="/tarifs.html" class="lien-nav text-sm font-medium">Tarifs</a>
+      <a data-nav-link="contact" href="/contact.html" class="lien-nav text-sm font-medium">Contact</a>
     </nav>
 
-    <div class="hidden items-center gap-4 md:flex">
-      <a href="tel:+33000000000" class="text-sm font-semibold text-slate-900 hover:text-amber-700">01 00 00 00 00</a>
-      <a href="/contact.html" class="rounded-lg bg-slate-900 px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-800">Demander un devis</a>
+    <div class="hidden items-center gap-5 lg:flex">
+      <a href="tel:+33000000000" class="lien hidden text-sm font-semibold xl:block">01 00 00 00 00</a>
+      <a href="/contact.html" class="btn btn-primaire btn-petit">Demander un devis</a>
     </div>
 
     <button type="button" data-menu-button aria-expanded="false" aria-controls="menu-mobile"
-      class="inline-flex h-11 w-11 items-center justify-center rounded-lg border border-slate-200 text-slate-900 md:hidden">
+      class="inline-flex h-11 w-11 items-center justify-center rounded-lg border bordure lg:hidden">
       <span class="sr-only">Ouvrir le menu</span>
-      <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+      <svg class="h-5 w-5 accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
         <path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round"/>
       </svg>
     </button>
   </div>
 
-  <div id="menu-mobile" data-menu-panel class="hidden border-t border-slate-200 bg-white md:hidden">
+  <div id="menu-mobile" data-menu-panel class="hidden border-t bordure bg-white lg:hidden">
     <nav class="mx-auto max-w-6xl space-y-1 px-4 py-4 sm:px-6" aria-label="Navigation mobile">
-      <a href="/index.html" class="block rounded-lg px-3 py-3 text-base font-medium text-slate-800 hover:bg-slate-50">Accueil</a>
-      <a href="/services.html" class="block rounded-lg px-3 py-3 text-base font-medium text-slate-800 hover:bg-slate-50">Services</a>
-      <a href="/realisations.html" class="block rounded-lg px-3 py-3 text-base font-medium text-slate-800 hover:bg-slate-50">Réalisations</a>
-      <a href="/contact.html" class="block rounded-lg px-3 py-3 text-base font-medium text-slate-800 hover:bg-slate-50">Contact</a>
-      <a href="/contact.html" class="mt-2 block rounded-lg bg-slate-900 px-3 py-3 text-center text-base font-semibold text-white">Demander un devis</a>
+      <a data-nav-link="index" href="/index.html" class="lien-menu px-3 py-3 text-base font-medium">Accueil</a>
+      <a data-nav-link="services" href="/services.html" class="lien-menu px-3 py-3 text-base font-medium">Services</a>
+      <a data-nav-link="outils" href="/outils.html" class="lien-menu px-3 py-3 text-base font-medium">Outils</a>
+      <a data-nav-link="formation" href="/formation.html" class="lien-menu px-3 py-3 text-base font-medium">Formation</a>
+      <a data-nav-link="tarifs" href="/tarifs.html" class="lien-menu px-3 py-3 text-base font-medium">Tarifs</a>
+      <a data-nav-link="contact" href="/contact.html" class="lien-menu px-3 py-3 text-base font-medium">Contact</a>
+      <a href="/contact.html" class="btn btn-primaire mt-3 w-full">Demander un devis</a>
     </nav>
   </div>
 </header>
 <main id="contenu">
-  <section class="bg-white">
-    <div class="mx-auto flex max-w-3xl flex-col items-center px-4 py-28 text-center sm:px-6">
-      <p class="text-sm font-semibold uppercase tracking-wider text-amber-700">Erreur 404</p>
-      <h1 class="mt-4 text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">Cette page n'existe pas</h1>
-      <p class="mt-5 max-w-lg text-lg text-slate-600">
+  <section>
+    <div class="mx-auto flex max-w-3xl flex-col items-center px-4 py-24 text-center sm:px-6 lg:py-28">
+      <p class="surtitre">Erreur 404</p>
+      <h1 class="mt-4 text-4xl font-extrabold tracking-tight sm:text-5xl">Cette page n'existe pas</h1>
+      <p class="mt-5 max-w-lg text-lg texte-doux">
         Le lien est peut-être erroné ou la page a été déplacée.
       </p>
       <div class="mt-10 flex flex-col gap-3 sm:flex-row">
-        <a href="/index.html" class="inline-flex items-center justify-center rounded-lg bg-slate-900 px-6 py-3.5 text-base font-semibold text-white transition hover:bg-slate-800">
-          Retour à l'accueil
-        </a>
-        <a href="/contact.html" class="inline-flex items-center justify-center rounded-lg border border-slate-300 px-6 py-3.5 text-base font-semibold text-slate-900 transition hover:bg-slate-50">
-          Nous contacter
-        </a>
+        <a href="/index.html" class="btn btn-primaire">Retour à l'accueil</a>
+        <a href="/contact.html" class="btn btn-secondaire">Nous contacter</a>
       </div>
     </div>
   </section>
 </main>
-<footer class="border-t border-slate-800 bg-slate-900 text-slate-300">
+<footer class="border-t bordure fond-alt">
   <div class="mx-auto max-w-6xl px-4 py-14 sm:px-6">
     <div class="grid gap-10 md:grid-cols-4">
       <div class="md:col-span-2">
-        <a href="/index.html" class="flex items-center gap-2.5 text-white">
-          <svg class="h-8 w-8 text-amber-500" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-            <path d="M4 26 16 5l12 21H4Z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
-            <path d="M10 26 16 15l6 11" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
-          </svg>
-          <span class="text-lg font-extrabold tracking-tight">Structurre</span>
+        <a href="/index.html" class="inline-block" aria-label="Structurre — retour à l'accueil">
+          <img src="/assets/img/logo.svg" alt="Structurre" width="405" height="275" class="h-14 w-auto">
         </a>
-        <p class="mt-4 max-w-sm text-sm leading-relaxed text-slate-400">
-          Conception, études et suivi de chantier. Nous accompagnons particuliers,
-          architectes et entreprises de la première esquisse à la livraison.
+        <p class="mt-5 max-w-sm text-sm leading-relaxed texte-doux">
+          Agence no-code. Nous concevons vos applications Airtable et Notion, puis nous
+          formons les équipes qui les utilisent au quotidien.
         </p>
       </div>
 
       <div>
-        <h2 class="text-sm font-semibold uppercase tracking-wider text-white">Navigation</h2>
-        <ul class="mt-4 space-y-2 text-sm">
-          <li><a href="/index.html" class="hover:text-amber-400">Accueil</a></li>
-          <li><a href="/services.html" class="hover:text-amber-400">Services</a></li>
-          <li><a href="/realisations.html" class="hover:text-amber-400">Réalisations</a></li>
-          <li><a href="/contact.html" class="hover:text-amber-400">Contact</a></li>
-          <li><a href="/mentions-legales.html" class="hover:text-amber-400">Mentions légales</a></li>
+        <h2 class="text-sm font-semibold uppercase tracking-wider">Navigation</h2>
+        <ul class="mt-4 space-y-2.5 text-sm">
+          <li><a href="/index.html" class="lien">Accueil</a></li>
+          <li><a href="/services.html" class="lien">Services</a></li>
+          <li><a href="/outils.html" class="lien">Outils</a></li>
+          <li><a href="/formation.html" class="lien">Conception &amp; formation</a></li>
+          <li><a href="/tarifs.html" class="lien">Tarifs</a></li>
+          <li><a href="/contact.html" class="lien">Contact</a></li>
+          <li><a href="/mentions-legales.html" class="lien">Mentions légales</a></li>
         </ul>
       </div>
 
       <div>
-        <h2 class="text-sm font-semibold uppercase tracking-wider text-white">Contact</h2>
-        <ul class="mt-4 space-y-2 text-sm text-slate-400">
-          <li><a href="mailto:contact@structurre.fr" class="hover:text-amber-400">contact@structurre.fr</a></li>
-          <li><a href="tel:+33000000000" class="hover:text-amber-400">01 00 00 00 00</a></li>
+        <h2 class="text-sm font-semibold uppercase tracking-wider">Contact</h2>
+        <ul class="mt-4 space-y-2.5 text-sm texte-doux">
+          <li><a href="mailto:contact@structurre.fr" class="lien">contact@structurre.fr</a></li>
+          <li><a href="tel:+33000000000" class="lien">01 00 00 00 00</a></li>
           <li>00 rue Exemple<br>00000 Ville</li>
           <li>Lun. – ven. · 9 h – 18 h</li>
         </ul>
       </div>
     </div>
 
-    <div class="mt-12 flex flex-col gap-3 border-t border-slate-800 pt-6 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between">
+    <div class="mt-12 flex flex-col gap-3 border-t bordure pt-6 text-xs texte-doux sm:flex-row sm:items-center sm:justify-between">
       <p>&copy; <span data-year>2026</span> Structurre. Tous droits réservés.</p>
-      <p>Site hébergé sur Cloudflare Pages · <a href="/mentions-legales.html" class="hover:text-amber-400">Mentions légales</a></p>
+      <p>Site hébergé sur Cloudflare Pages · <a href="/mentions-legales.html" class="lien">Mentions légales</a></p>
     </div>
   </div>
 </footer>

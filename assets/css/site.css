@@ -1,8 +1,28 @@
-/* Styles maison (hors Tailwind) : toujours chargés, jamais générés. */
+/* ============================================================================
+   Structurre — charte d'interface (fichier maison, toujours chargé, jamais généré)
+   ----------------------------------------------------------------------------
+   Tailwind ne sert qu'à la mise en page (grilles, espacements, tailles de texte).
+   TOUTES les couleurs du site viennent des variables ci-dessous : le rendu est
+   donc identique que `assets/css/tailwind.css` soit compilée ou non.
+
+     Police principale ... Inter (Google Fonts)
+     Fond principal ...... #FFFFFF
+     Texte principal ..... #222222
+     Emphase ............. #207DFB  (survol, état actif, boutons, liens, icônes)
+   ========================================================================== */
 
 :root {
   --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
+
+  --blanc: #ffffff;
+  --noir: #222222;
+  --bleu: #207dfb;          /* couleur d'emphase */
+  --bleu-actif: #0a62dc;    /* survol / appui d'un élément déjà bleu */
+  --bleu-voile: #eef4ff;    /* aplat très clair pour les surfaces accentuées */
+  --gris-texte: #5b6472;    /* texte secondaire */
+  --gris-ligne: #e5e9f0;    /* filets et bordures */
+  --gris-fond: #f7f9fc;     /* sections alternées */
 }
 
 html {
@@ -12,15 +32,253 @@ html {
 
 body {
   font-family: var(--font-sans);
+  background-color: var(--blanc);
+  color: var(--noir);
 }
 
-@media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
-  *, *::before, *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-  }
+/* --- Texte ---------------------------------------------------------------- */
+.texte-doux { color: var(--gris-texte); }
+.accent { color: var(--bleu); }
+
+.surtitre {
+  color: var(--bleu);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+/* --- Surfaces ------------------------------------------------------------- */
+.fond-alt { background-color: var(--gris-fond); }
+.fond-voile { background-color: var(--bleu-voile); }
+.bande-accent { background-color: var(--bleu); color: var(--blanc); }
+.bande-accent .texte-doux { color: rgb(255 255 255 / 0.85); }
+
+/* À combiner avec les utilitaires Tailwind `border`, `border-t`, `border-b`. */
+.bordure { border-color: var(--gris-ligne); }
+
+/* --- Liens ---------------------------------------------------------------- */
+.lien {
+  color: var(--bleu);
+  transition: color 0.15s ease;
+}
+.lien:hover { color: var(--bleu-actif); }
+
+.lien-fleche {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  color: var(--bleu);
+  font-weight: 600;
+  transition: gap 0.2s ease, color 0.15s ease;
+}
+.lien-fleche:hover { gap: 0.625rem; color: var(--bleu-actif); }
+
+/* --- Navigation ----------------------------------------------------------- */
+.lien-nav {
+  position: relative;
+  color: var(--noir);
+  transition: color 0.15s ease;
+}
+.lien-nav::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -0.5rem;
+  height: 2px;
+  background-color: var(--bleu);
+  transform: scaleX(0);
+  transition: transform 0.2s ease;
+}
+.lien-nav:hover { color: var(--bleu); }
+.lien-nav:hover::after { transform: scaleX(1); }
+.lien-nav.est-actif { color: var(--bleu); font-weight: 600; }
+.lien-nav.est-actif::after { transform: scaleX(1); }
+
+.lien-menu {
+  display: block;
+  border-radius: 0.625rem;
+  color: var(--noir);
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+.lien-menu:hover,
+.lien-menu.est-actif { background-color: var(--bleu-voile); color: var(--bleu); }
+
+/* --- En-tête -------------------------------------------------------------- */
+.entete {
+  background-color: rgb(255 255 255 / 0.9);
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
+  backdrop-filter: saturate(180%) blur(10px);
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.entete.est-collee {
+  border-bottom-color: var(--gris-ligne);
+  box-shadow: 0 8px 24px -20px rgb(34 34 34 / 0.6);
+}
+
+/* --- Boutons -------------------------------------------------------------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 1px solid transparent;
+  border-radius: 0.625rem;
+  padding: 0.875rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.25;
+  text-align: center;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+.btn-petit { padding: 0.625rem 1.125rem; font-size: 0.875rem; }
+
+.btn-primaire { background-color: var(--bleu); color: var(--blanc); }
+.btn-primaire:hover { background-color: var(--bleu-actif); }
+
+.btn-secondaire {
+  background-color: var(--blanc);
+  border-color: var(--gris-ligne);
+  color: var(--noir);
+}
+.btn-secondaire:hover { border-color: var(--bleu); color: var(--bleu); }
+
+/* Sur la bande bleue : bouton blanc, texte bleu. */
+.btn-inverse { background-color: var(--blanc); color: var(--bleu); }
+.btn-inverse:hover { background-color: var(--bleu-voile); }
+
+.btn:disabled { cursor: not-allowed; opacity: 0.6; }
+
+/* --- Cartes --------------------------------------------------------------- */
+.carte {
+  background-color: var(--blanc);
+  border: 1px solid var(--gris-ligne);
+  border-radius: 1rem;
+}
+/* .carte pose un fond blanc ; sans cette règle il l'emporterait sur .fond-voile,
+   déclaré plus haut à spécificité égale. */
+.carte.fond-voile { background-color: var(--bleu-voile); }
+
+.carte-interactive {
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+.carte-interactive:hover {
+  border-color: var(--bleu);
+  box-shadow: 0 18px 40px -28px rgb(32 125 251 / 0.55);
+  transform: translateY(-2px);
+}
+
+/* Carte mise en avant (grille tarifaire) */
+.carte-vedette {
+  border-color: var(--bleu);
+  box-shadow: 0 24px 50px -32px rgb(32 125 251 / 0.5);
+}
+
+/* Étiquette « offre principale », prix, unité */
+.etiquette {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 9999px;
+  background-color: var(--bleu);
+  color: var(--blanc);
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+/* white-space: le montant ne doit jamais se couper entre le nombre et le symbole. */
+.prix { color: var(--bleu); font-weight: 800; letter-spacing: -0.02em; white-space: nowrap; }
+.prix-unite { color: var(--gris-texte); font-weight: 500; }
+
+/* Pastille d'icône (icônes = couleur d'emphase) */
+.pastille {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.875rem;
+  background-color: var(--bleu-voile);
+  color: var(--bleu);
+}
+.puce { color: var(--bleu); }
+
+/* Numéro d'étape */
+.jeton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background-color: var(--bleu);
+  color: var(--blanc);
+  font-weight: 700;
+}
+
+/* --- Formulaire ----------------------------------------------------------- */
+.champ {
+  width: 100%;
+  border: 1px solid var(--gris-ligne);
+  border-radius: 0.625rem;
+  background-color: var(--blanc);
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  color: var(--noir);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.champ::placeholder { color: #9aa3b2; }
+.champ:focus {
+  outline: none;
+  border-color: var(--bleu);
+  box-shadow: 0 0 0 3px rgb(32 125 251 / 0.18);
+}
+.case { accent-color: var(--bleu); }
+
+/* --- Messages d'état du formulaire (posés par assets/js/contact.js) ------- */
+.message {
+  margin-top: 1rem;
+  border: 1px solid;
+  border-radius: 0.625rem;
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+}
+.message-info { border-color: var(--gris-ligne); background-color: var(--gris-fond); color: var(--noir); }
+.message-ok { border-color: #b7e0c4; background-color: #eefaf1; color: #14603a; }
+.message-erreur { border-color: #f3c2c2; background-color: #fdeeee; color: #8c1d1d; }
+
+/* --- Questions fréquentes ------------------------------------------------- */
+.faq summary { cursor: pointer; list-style: none; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary:hover { color: var(--bleu); }
+.faq[open] summary { color: var(--bleu); }
+.faq summary .chevron { transition: transform 0.2s ease; }
+.faq[open] summary .chevron { transform: rotate(180deg); }
+
+/* --- Décor ---------------------------------------------------------------- */
+.halo-bleu {
+  position: absolute;
+  top: -12rem;
+  right: -10rem;
+  width: 34rem;
+  height: 34rem;
+  border-radius: 9999px;
+  background-color: rgb(32 125 251 / 0.10);
+  filter: blur(64px);
+  pointer-events: none;
+}
+
+.pattern-grid {
+  background-image:
+    linear-gradient(to right, rgb(32 125 251 / 0.14) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(32 125 251 / 0.14) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* --- Accessibilité -------------------------------------------------------- */
+:focus-visible {
+  outline: 2px solid var(--bleu);
+  outline-offset: 2px;
+  border-radius: 4px;
 }
 
 /* Apparition au scroll (piloté par main.js) */
@@ -34,17 +292,11 @@ body {
   transform: none;
 }
 
-/* Motif discret pour les blocs "image à venir" */
-.pattern-grid {
-  background-image:
-    linear-gradient(to right, rgb(148 163 184 / 0.25) 1px, transparent 1px),
-    linear-gradient(to bottom, rgb(148 163 184 / 0.25) 1px, transparent 1px);
-  background-size: 28px 28px;
-}
-
-/* Focus visible cohérent sur tout le site */
-:focus-visible {
-  outline: 2px solid #d97706;
-  outline-offset: 2px;
-  border-radius: 2px;
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

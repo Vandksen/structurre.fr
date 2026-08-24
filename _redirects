@@ -1,6 +1,14 @@
 # Cloudflare Pages — redirections
 # URLs sans extension .html
 /services      /services.html      301
-/realisations  /realisations.html  301
+/outils        /outils.html        301
+/formation     /formation.html     301
+/tarifs        /tarifs.html        301
 /contact       /contact.html       301
 /mentions      /mentions-legales.html 301
+# Alias courants
+/prix          /tarifs.html        301
+/tarif         /tarifs.html        301
+# Ancienne page retirée lors de la refonte
+/realisations       /services.html   301
+/realisations.html  /services.html   301

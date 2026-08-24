@@ -4,16 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Nos services — Structurre</title>
-<meta name="description" content="Étude de faisabilité, plans et notes de calcul, rénovation lourde et maîtrise d'œuvre complète : des prestations au périmètre et au prix clairs.">
+<meta name="description" content="Cadrage de vos process, conception d'applications Airtable et Notion, automatisations, reprise de données et formation des utilisateurs.">
 <link rel="canonical" href="https://structurre.fr/services.html">
-<meta name="theme-color" content="#0f172a">
+<meta name="theme-color" content="#ffffff">
 
 <!-- Open Graph / réseaux sociaux -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Structurre">
 <meta property="og:locale" content="fr_FR">
 <meta property="og:title" content="Nos services — Structurre">
-<meta property="og:description" content="Étude de faisabilité, plans et notes de calcul, rénovation lourde et maîtrise d'œuvre complète : des prestations au périmètre et au prix clairs.">
+<meta property="og:description" content="Cadrage de vos process, conception d'applications Airtable et Notion, automatisations, reprise de données et formation des utilisateurs.">
 <meta property="og:url" content="https://structurre.fr/services.html">
 <meta property="og:image" content="https://structurre.fr/assets/img/og-image.svg">
 <meta name="twitter:card" content="summary_large_image">
@@ -28,214 +28,283 @@
 <link rel="stylesheet" href="/assets/css/tailwind.css">
 <link rel="stylesheet" href="/assets/css/site.css">
 </head>
-<body class="bg-white text-slate-700 antialiased">
-<a href="#contenu" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-slate-900 focus:px-4 focus:py-2 focus:text-white">Aller au contenu</a>
-<header data-header class="sticky top-0 z-40 border-b border-transparent bg-white/90 backdrop-blur transition-shadow">
+<body class="antialiased">
+<a href="#contenu" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-white focus:px-4 focus:py-2 focus:font-semibold focus:shadow-lg">Aller au contenu</a>
+<header data-header class="entete sticky top-0 z-40">
   <div class="mx-auto flex h-20 max-w-6xl items-center justify-between px-4 sm:px-6">
-    <a href="/index.html" class="flex items-center gap-2.5 text-slate-900">
-      <svg class="h-8 w-8 text-amber-600" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-        <path d="M4 26 16 5l12 21H4Z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
-        <path d="M10 26 16 15l6 11" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
-      </svg>
-      <span class="text-lg font-extrabold tracking-tight">Structurre</span>
+    <a href="/index.html" class="shrink-0" aria-label="Structurre — retour à l'accueil">
+      <img src="/assets/img/logo.svg" alt="Structurre" width="405" height="275" class="h-11 w-auto sm:h-14">
     </a>
 
-    <nav class="hidden items-center gap-8 md:flex" aria-label="Navigation principale">
-      <a data-nav-link="index" href="/index.html" class="text-sm font-medium text-slate-700 transition hover:text-amber-700">Accueil</a>
-      <a data-nav-link="services" href="/services.html" class="text-sm font-medium text-slate-700 transition hover:text-amber-700">Services</a>
-      <a data-nav-link="realisations" href="/realisations.html" class="text-sm font-medium text-slate-700 transition hover:text-amber-700">Réalisations</a>
-      <a data-nav-link="contact" href="/contact.html" class="text-sm font-medium text-slate-700 transition hover:text-amber-700">Contact</a>
+    <nav class="hidden items-center gap-7 lg:flex" aria-label="Navigation principale">
+      <a data-nav-link="index" href="/index.html" class="lien-nav text-sm font-medium">Accueil</a>
+      <a data-nav-link="services" href="/services.html" class="lien-nav text-sm font-medium">Services</a>
+      <a data-nav-link="outils" href="/outils.html" class="lien-nav text-sm font-medium">Outils</a>
+      <a data-nav-link="formation" href="/formation.html" class="lien-nav text-sm font-medium">Formation</a>
+      <a data-nav-link="tarifs" href="/tarifs.html" class="lien-nav text-sm font-medium">Tarifs</a>
+      <a data-nav-link="contact" href="/contact.html" class="lien-nav text-sm font-medium">Contact</a>
     </nav>
 
-    <div class="hidden items-center gap-4 md:flex">
-      <a href="tel:+33000000000" class="text-sm font-semibold text-slate-900 hover:text-amber-700">01 00 00 00 00</a>
-      <a href="/contact.html" class="rounded-lg bg-slate-900 px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-800">Demander un devis</a>
+    <div class="hidden items-center gap-5 lg:flex">
+      <a href="tel:+33000000000" class="lien hidden text-sm font-semibold xl:block">01 00 00 00 00</a>
+      <a href="/contact.html" class="btn btn-primaire btn-petit">Demander un devis</a>
     </div>
 
     <button type="button" data-menu-button aria-expanded="false" aria-controls="menu-mobile"
-      class="inline-flex h-11 w-11 items-center justify-center rounded-lg border border-slate-200 text-slate-900 md:hidden">
+      class="inline-flex h-11 w-11 items-center justify-center rounded-lg border bordure lg:hidden">
       <span class="sr-only">Ouvrir le menu</span>
-      <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+      <svg class="h-5 w-5 accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
         <path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round"/>
       </svg>
     </button>
   </div>
 
-  <div id="menu-mobile" data-menu-panel class="hidden border-t border-slate-200 bg-white md:hidden">
+  <div id="menu-mobile" data-menu-panel class="hidden border-t bordure bg-white lg:hidden">
     <nav class="mx-auto max-w-6xl space-y-1 px-4 py-4 sm:px-6" aria-label="Navigation mobile">
-      <a href="/index.html" class="block rounded-lg px-3 py-3 text-base font-medium text-slate-800 hover:bg-slate-50">Accueil</a>
-      <a href="/services.html" class="block rounded-lg px-3 py-3 text-base font-medium text-slate-800 hover:bg-slate-50">Services</a>
-      <a href="/realisations.html" class="block rounded-lg px-3 py-3 text-base font-medium text-slate-800 hover:bg-slate-50">Réalisations</a>
-      <a href="/contact.html" class="block rounded-lg px-3 py-3 text-base font-medium text-slate-800 hover:bg-slate-50">Contact</a>
-      <a href="/contact.html" class="mt-2 block rounded-lg bg-slate-900 px-3 py-3 text-center text-base font-semibold text-white">Demander un devis</a>
+      <a data-nav-link="index" href="/index.html" class="lien-menu px-3 py-3 text-base font-medium">Accueil</a>
+      <a data-nav-link="services" href="/services.html" class="lien-menu px-3 py-3 text-base font-medium">Services</a>
+      <a data-nav-link="outils" href="/outils.html" class="lien-menu px-3 py-3 text-base font-medium">Outils</a>
+      <a data-nav-link="formation" href="/formation.html" class="lien-menu px-3 py-3 text-base font-medium">Formation</a>
+      <a data-nav-link="tarifs" href="/tarifs.html" class="lien-menu px-3 py-3 text-base font-medium">Tarifs</a>
+      <a data-nav-link="contact" href="/contact.html" class="lien-menu px-3 py-3 text-base font-medium">Contact</a>
+      <a href="/contact.html" class="btn btn-primaire mt-3 w-full">Demander un devis</a>
     </nav>
   </div>
 </header>
 <main id="contenu">
 
-  <section class="border-b border-slate-100 bg-slate-50">
-    <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:py-24">
-      <nav class="text-sm text-slate-500" aria-label="Fil d'Ariane">
-        <a href="/index.html" class="hover:text-amber-700">Accueil</a>
-        <span class="mx-2">/</span><span class="text-slate-700">Services</span>
+  <!-- ================= EN-TÊTE DE PAGE ================= -->
+  <section class="fond-alt border-b bordure">
+    <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:py-20">
+      <nav class="text-sm texte-doux" aria-label="Fil d'Ariane">
+        <a href="/index.html" class="lien">Accueil</a>
+        <span class="mx-2" aria-hidden="true">/</span><span>Services</span>
       </nav>
-      <h1 class="mt-6 max-w-3xl text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
-        Des prestations claires, du diagnostic à la livraison
+      <h1 class="mt-6 max-w-3xl text-4xl font-extrabold tracking-tight sm:text-5xl">
+        Ce que nous construisons, et comment
       </h1>
-      <p class="mt-5 max-w-2xl text-lg text-slate-600">
-        Chaque mission fait l'objet d'un périmètre écrit, d'un planning et d'un prix ferme.
-        Vous savez exactement ce qui est inclus.
+      <p class="mt-5 max-w-2xl text-lg texte-doux">
+        Une mission type couvre un workflow complet : le cadrage, l'application, les
+        automatisations qui vont avec et la formation des personnes qui s'en serviront.
       </p>
     </div>
   </section>
 
-  <section class="bg-white py-20 lg:py-24">
+  <!-- ================= PRESTATIONS ================= -->
+  <section class="py-20 lg:py-24">
     <div class="mx-auto max-w-6xl px-4 sm:px-6">
       <div class="grid gap-6 md:grid-cols-2">
 
-        <article data-reveal class="rounded-2xl border border-slate-200 p-8">
-          <h2 class="text-xl font-semibold text-slate-900">Étude de faisabilité</h2>
-          <p class="mt-3 text-sm leading-relaxed text-slate-600">
-            Visite du site, analyse de l'existant et scénarios chiffrés pour arbitrer avant
-            d'engager des frais.
+        <article data-reveal class="carte carte-interactive p-8">
+          <span class="pastille h-12 w-12">
+            <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M11 19a8 8 0 1 1 0-16 8 8 0 0 1 0 16Zm10 2-4.35-4.35" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <h2 class="mt-6 text-xl font-semibold">Cadrage &amp; audit du process</h2>
+          <p class="mt-3 text-sm leading-relaxed texte-doux">
+            On déroule votre process tel qu'il se passe vraiment : qui saisit quoi, où ça
+            coince, ce qui se perd entre deux fichiers. On en sort un périmètre écrit.
           </p>
-          <ul class="mt-5 space-y-2 text-sm text-slate-600">
-            <li class="flex gap-2"><span class="text-amber-600">✓</span> Relevé et diagnostic sur place</li>
-            <li class="flex gap-2"><span class="text-amber-600">✓</span> Contraintes urbanisme et réglementaires</li>
-            <li class="flex gap-2"><span class="text-amber-600">✓</span> Estimation budgétaire fourchette basse / haute</li>
+          <ul class="mt-5 space-y-2 text-sm texte-doux">
+            <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Atelier avec les personnes qui font le travail</li>
+            <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Cartographie des étapes, des rôles et des données</li>
+            <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Choix argumenté de l'outil : Airtable, Notion ou les deux</li>
           </ul>
         </article>
 
-        <article data-reveal class="rounded-2xl border border-slate-200 p-8">
-          <h2 class="text-xl font-semibold text-slate-900">Plans &amp; notes de calcul</h2>
-          <p class="mt-3 text-sm leading-relaxed text-slate-600">
-            Dossier technique complet, exploitable directement par les entreprises et les
-            bureaux de contrôle.
+        <article data-reveal class="carte carte-interactive p-8">
+          <span class="pastille h-12 w-12">
+            <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 4h16v16H4zM4 9h16M9 9v11" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <h2 class="mt-6 text-xl font-semibold">Conception de l'application</h2>
+          <p class="mt-3 text-sm leading-relaxed texte-doux">
+            Le cœur de la mission : une application que vos équipes ouvrent tous les matins,
+            où chaque rôle voit ce qui le concerne et rien d'autre.
           </p>
-          <ul class="mt-5 space-y-2 text-sm text-slate-600">
-            <li class="flex gap-2"><span class="text-amber-600">✓</span> Plans d'exécution et coupes</li>
-            <li class="flex gap-2"><span class="text-amber-600">✓</span> Descentes de charges et dimensionnement</li>
-            <li class="flex gap-2"><span class="text-amber-600">✓</span> Pièces pour déclaration ou permis</li>
+          <ul class="mt-5 space-y-2 text-sm texte-doux">
+            <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Modèle de données et relations entre tables</li>
+            <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Vues, filtres et interfaces par rôle</li>
+            <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Formulaires de saisie, droits d'accès et partages</li>
           </ul>
         </article>
 
-        <article data-reveal class="rounded-2xl border border-slate-200 p-8">
-          <h2 class="text-xl font-semibold text-slate-900">Rénovation lourde</h2>
-          <p class="mt-3 text-sm leading-relaxed text-slate-600">
-            Ouverture de murs porteurs, reprise en sous-œuvre, surélévation : les
-            interventions structurelles sont notre cœur de métier.
+        <article data-reveal class="carte carte-interactive p-8">
+          <span class="pastille h-12 w-12">
+            <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M13 2 4.5 13H11l-1 9 8.5-11H12l1-9Z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <h2 class="mt-6 text-xl font-semibold">Automatisations &amp; intégrations</h2>
+          <p class="mt-3 text-sm leading-relaxed texte-doux">
+            Tout ce que quelqu'un fait aujourd'hui à la main parce que « c'est comme ça » :
+            relances, copies, notifications, mises à jour de statut.
           </p>
-          <ul class="mt-5 space-y-2 text-sm text-slate-600">
-            <li class="flex gap-2"><span class="text-amber-600">✓</span> Étude structure avant travaux</li>
-            <li class="flex gap-2"><span class="text-amber-600">✓</span> Choix des matériaux et des poses</li>
-            <li class="flex gap-2"><span class="text-amber-600">✓</span> Contrôle d'exécution sur site</li>
+          <ul class="mt-5 space-y-2 text-sm texte-doux">
+            <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Automatisations natives Airtable et Notion</li>
+            <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Scénarios Make, Zapier ou n8n quand il faut relier deux mondes</li>
+            <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Connexion à vos outils : messagerie, agenda, stockage, facturation</li>
           </ul>
         </article>
 
-        <article data-reveal class="rounded-2xl border border-slate-200 p-8">
-          <h2 class="text-xl font-semibold text-slate-900">Maîtrise d'œuvre complète</h2>
-          <p class="mt-3 text-sm leading-relaxed text-slate-600">
-            Nous consultons les entreprises, comparons les offres et pilotons le chantier
-            jusqu'à la levée des réserves.
+        <article data-reveal class="carte carte-interactive p-8">
+          <span class="pastille h-12 w-12">
+            <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 4 2 9l10 5 10-5-10-5Zm-6 8v4.5c0 1.4 2.7 2.5 6 2.5s6-1.1 6-2.5V12" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <h2 class="mt-6 text-xl font-semibold">Reprise de données &amp; formation</h2>
+          <p class="mt-3 text-sm leading-relaxed texte-doux">
+            Une application vide ne sert à rien. On y verse votre historique, puis on forme
+            les utilisateurs jusqu'à ce qu'ils n'aient plus besoin de nous.
           </p>
-          <ul class="mt-5 space-y-2 text-sm text-slate-600">
-            <li class="flex gap-2"><span class="text-amber-600">✓</span> Appel d'offres et analyse comparative</li>
-            <li class="flex gap-2"><span class="text-amber-600">✓</span> Planning et coordination des lots</li>
-            <li class="flex gap-2"><span class="text-amber-600">✓</span> Comptes rendus hebdomadaires</li>
+          <ul class="mt-5 space-y-2 text-sm texte-doux">
+            <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Import et nettoyage de vos fichiers existants</li>
+            <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Session de prise en main, par rôle</li>
+            <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Atelier administrateur et documentation remise</li>
           </ul>
         </article>
 
       </div>
+
+      <p class="mt-8 text-sm texte-doux">
+        Le détail de la partie formation est sur la page
+        <a href="/formation.html" class="lien font-medium">Conception &amp; formation</a>,
+        et les prix sont sur la <a href="/tarifs.html" class="lien font-medium">grille tarifaire</a>.
+      </p>
     </div>
   </section>
 
-  <section class="bg-slate-50 py-20 lg:py-24">
+  <!-- ================= DÉROULÉ D'UNE MISSION ================= -->
+  <section class="fond-alt py-20 lg:py-24">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <p class="surtitre">Déroulé d'une mission</p>
+      <h2 class="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">Comment nous travaillons</h2>
+
+      <ol class="mt-12 grid gap-6 md:grid-cols-4">
+        <li data-reveal class="carte p-6">
+          <span class="jeton h-10 w-10 text-sm">1</span>
+          <h3 class="mt-4 font-semibold">Atelier de cadrage</h3>
+          <p class="mt-2 text-sm leading-relaxed texte-doux">Une à deux heures pour comprendre le process et fixer le périmètre.</p>
+        </li>
+        <li data-reveal class="carte p-6">
+          <span class="jeton h-10 w-10 text-sm">2</span>
+          <h3 class="mt-4 font-semibold">Première version</h3>
+          <p class="mt-2 text-sm leading-relaxed texte-doux">Une maquette manipulable sous quelques jours, corrigée avec vous.</p>
+        </li>
+        <li data-reveal class="carte p-6">
+          <span class="jeton h-10 w-10 text-sm">3</span>
+          <h3 class="mt-4 font-semibold">Mise en service</h3>
+          <p class="mt-2 text-sm leading-relaxed texte-doux">Reprise des données, automatisations activées, formation des utilisateurs.</p>
+        </li>
+        <li data-reveal class="carte p-6">
+          <span class="jeton h-10 w-10 text-sm">4</span>
+          <h3 class="mt-4 font-semibold">Évolutions</h3>
+          <p class="mt-2 text-sm leading-relaxed texte-doux">Interventions à l'heure, à la demande, sans abonnement.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ================= QUESTIONS FRÉQUENTES ================= -->
+  <section class="py-20 lg:py-24">
     <div class="mx-auto max-w-3xl px-4 sm:px-6">
-      <h2 class="text-3xl font-bold tracking-tight text-slate-900">Questions fréquentes</h2>
+      <p class="surtitre">Bon à savoir</p>
+      <h2 class="mt-3 text-3xl font-bold tracking-tight">Questions fréquentes</h2>
       <div class="mt-10 space-y-4">
-        <details class="group rounded-xl border border-slate-200 bg-white p-6" open>
-          <summary class="cursor-pointer list-none font-semibold text-slate-900">
-            Sous quel délai obtient-on un devis ?
+        <details class="faq carte p-6" open>
+          <summary class="flex items-center justify-between gap-4 font-semibold">
+            En combien de temps l'application est-elle en service ?
+            <svg class="chevron h-5 w-5 accent shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M5.3 7.3a1 1 0 0 1 1.4 0L10 10.6l3.3-3.3a1 1 0 1 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 0-1.4Z"/></svg>
           </summary>
-          <p class="mt-3 text-sm leading-relaxed text-slate-600">
-            Nous répondons sous 48 heures ouvrées et remettons un devis détaillé sous une
-            semaine après la visite technique.
+          <p class="mt-3 text-sm leading-relaxed texte-doux">
+            Comptez deux à quatre semaines entre l'atelier de cadrage et la mise en service,
+            selon la disponibilité de vos équipes et le volume de données à reprendre.
           </p>
         </details>
-        <details class="group rounded-xl border border-slate-200 bg-white p-6">
-          <summary class="cursor-pointer list-none font-semibold text-slate-900">
-            Intervenez-vous sur de petits chantiers ?
+        <details class="faq carte p-6">
+          <summary class="flex items-center justify-between gap-4 font-semibold">
+            Airtable ou Notion : qui décide ?
+            <svg class="chevron h-5 w-5 accent shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M5.3 7.3a1 1 0 0 1 1.4 0L10 10.6l3.3-3.3a1 1 0 1 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 0-1.4Z"/></svg>
           </summary>
-          <p class="mt-3 text-sm leading-relaxed text-slate-600">
-            Oui. Une simple ouverture de mur porteur ou une note de calcul ponctuelle
-            fait partie de nos missions courantes.
+          <p class="mt-3 text-sm leading-relaxed texte-doux">
+            Nous recommandons, vous tranchez. Le choix se fait à l'atelier de cadrage, selon la
+            structure de vos données et les habitudes de l'équipe — les critères sont détaillés
+            sur la page <a href="/outils.html" class="lien font-medium">Outils</a>. Si vous
+            utilisez déjà l'un des deux, nous partons de l'existant.
           </p>
         </details>
-        <details class="group rounded-xl border border-slate-200 bg-white p-6">
-          <summary class="cursor-pointer list-none font-semibold text-slate-900">
-            Quelle zone géographique couvrez-vous ?
+        <details class="faq carte p-6">
+          <summary class="flex items-center justify-between gap-4 font-semibold">
+            Et si nos besoins changent dans six mois ?
+            <svg class="chevron h-5 w-5 accent shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M5.3 7.3a1 1 0 0 1 1.4 0L10 10.6l3.3-3.3a1 1 0 1 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 0-1.4Z"/></svg>
           </summary>
-          <p class="mt-3 text-sm leading-relaxed text-slate-600">
-            À compléter : indiquez ici vos départements ou votre rayon d'intervention.
+          <p class="mt-3 text-sm leading-relaxed texte-doux">
+            C'est prévu, et c'est même le but de la formation : la plupart des ajustements
+            courants, votre référent interne les fera lui-même. Pour le reste, nous
+            intervenons à l'heure, entre 100 et 150 € HT, sans abonnement — voir la
+            <a href="/tarifs.html" class="lien font-medium">grille tarifaire</a>.
+          </p>
+        </details>
+        <details class="faq carte p-6">
+          <summary class="flex items-center justify-between gap-4 font-semibold">
+            Nos données restent-elles les nôtres ?
+            <svg class="chevron h-5 w-5 accent shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M5.3 7.3a1 1 0 0 1 1.4 0L10 10.6l3.3-3.3a1 1 0 1 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 0-1.4Z"/></svg>
+          </summary>
+          <p class="mt-3 text-sm leading-relaxed texte-doux">
+            Oui. L'espace Airtable ou Notion est ouvert à votre nom, vous en êtes propriétaire
+            et administrateur. Nous y accédons le temps de la mission, avec un compte que vous
+            pouvez retirer à tout moment. Vos données sont exportables quand vous le souhaitez.
           </p>
         </details>
       </div>
     </div>
   </section>
 
-  <section class="bg-slate-900">
+  <!-- ================= APPEL À L'ACTION ================= -->
+  <section class="bande-accent">
     <div class="mx-auto max-w-6xl px-4 py-16 text-center sm:px-6">
-      <h2 class="text-3xl font-bold tracking-tight text-white">Besoin d'un chiffrage ?</h2>
-      <p class="mx-auto mt-3 max-w-xl text-lg text-slate-300">Décrivez votre projet, nous vous rappelons.</p>
-      <a href="/contact.html" class="mt-8 inline-flex items-center justify-center rounded-lg bg-amber-500 px-7 py-4 text-base font-semibold text-slate-950 transition hover:bg-amber-400">
-        Demander un devis
-      </a>
+      <h2 class="text-3xl font-bold tracking-tight">Un workflow à confier ?</h2>
+      <p class="mx-auto mt-3 max-w-xl text-lg texte-doux">Racontez-nous comment ça se passe aujourd'hui, on vous dit ce que ça donnerait demain.</p>
+      <a href="/contact.html" class="btn btn-inverse mt-8">Demander un devis</a>
     </div>
   </section>
 
 </main>
-<footer class="border-t border-slate-800 bg-slate-900 text-slate-300">
+<footer class="border-t bordure fond-alt">
   <div class="mx-auto max-w-6xl px-4 py-14 sm:px-6">
     <div class="grid gap-10 md:grid-cols-4">
       <div class="md:col-span-2">
-        <a href="/index.html" class="flex items-center gap-2.5 text-white">
-          <svg class="h-8 w-8 text-amber-500" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-            <path d="M4 26 16 5l12 21H4Z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
-            <path d="M10 26 16 15l6 11" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
-          </svg>
-          <span class="text-lg font-extrabold tracking-tight">Structurre</span>
+        <a href="/index.html" class="inline-block" aria-label="Structurre — retour à l'accueil">
+          <img src="/assets/img/logo.svg" alt="Structurre" width="405" height="275" class="h-14 w-auto">
         </a>
-        <p class="mt-4 max-w-sm text-sm leading-relaxed text-slate-400">
-          Conception, études et suivi de chantier. Nous accompagnons particuliers,
-          architectes et entreprises de la première esquisse à la livraison.
+        <p class="mt-5 max-w-sm text-sm leading-relaxed texte-doux">
+          Agence no-code. Nous concevons vos applications Airtable et Notion, puis nous
+          formons les équipes qui les utilisent au quotidien.
         </p>
       </div>
 
       <div>
-        <h2 class="text-sm font-semibold uppercase tracking-wider text-white">Navigation</h2>
-        <ul class="mt-4 space-y-2 text-sm">
-          <li><a href="/index.html" class="hover:text-amber-400">Accueil</a></li>
-          <li><a href="/services.html" class="hover:text-amber-400">Services</a></li>
-          <li><a href="/realisations.html" class="hover:text-amber-400">Réalisations</a></li>
-          <li><a href="/contact.html" class="hover:text-amber-400">Contact</a></li>
-          <li><a href="/mentions-legales.html" class="hover:text-amber-400">Mentions légales</a></li>
+        <h2 class="text-sm font-semibold uppercase tracking-wider">Navigation</h2>
+        <ul class="mt-4 space-y-2.5 text-sm">
+          <li><a href="/index.html" class="lien">Accueil</a></li>
+          <li><a href="/services.html" class="lien">Services</a></li>
+          <li><a href="/outils.html" class="lien">Outils</a></li>
+          <li><a href="/formation.html" class="lien">Conception &amp; formation</a></li>
+          <li><a href="/tarifs.html" class="lien">Tarifs</a></li>
+          <li><a href="/contact.html" class="lien">Contact</a></li>
+          <li><a href="/mentions-legales.html" class="lien">Mentions légales</a></li>
         </ul>
       </div>
 
       <div>
-        <h2 class="text-sm font-semibold uppercase tracking-wider text-white">Contact</h2>
-        <ul class="mt-4 space-y-2 text-sm text-slate-400">
-          <li><a href="mailto:contact@structurre.fr" class="hover:text-amber-400">contact@structurre.fr</a></li>
-          <li><a href="tel:+33000000000" class="hover:text-amber-400">01 00 00 00 00</a></li>
+        <h2 class="text-sm font-semibold uppercase tracking-wider">Contact</h2>
+        <ul class="mt-4 space-y-2.5 text-sm texte-doux">
+          <li><a href="mailto:contact@structurre.fr" class="lien">contact@structurre.fr</a></li>
+          <li><a href="tel:+33000000000" class="lien">01 00 00 00 00</a></li>
           <li>00 rue Exemple<br>00000 Ville</li>
           <li>Lun. – ven. · 9 h – 18 h</li>
         </ul>
       </div>
     </div>
 
-    <div class="mt-12 flex flex-col gap-3 border-t border-slate-800 pt-6 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between">
+    <div class="mt-12 flex flex-col gap-3 border-t bordure pt-6 text-xs texte-doux sm:flex-row sm:items-center sm:justify-between">
       <p>&copy; <span data-year>2026</span> Structurre. Tous droits réservés.</p>
-      <p>Site hébergé sur Cloudflare Pages · <a href="/mentions-legales.html" class="hover:text-amber-400">Mentions légales</a></p>
+      <p>Site hébergé sur Cloudflare Pages · <a href="/mentions-legales.html" class="lien">Mentions légales</a></p>
     </div>
   </div>
 </footer>

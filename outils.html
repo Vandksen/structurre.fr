@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-pt-24">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Airtable &amp; Notion — Structurre</title>
+<meta name="description" content="Ce que font Airtable et Notion, ce qui les distingue et comment choisir : les deux outils sur lesquels nous construisons vos applications métier.">
+<link rel="canonical" href="https://structurre.fr/outils.html">
+<meta name="theme-color" content="#ffffff">
+
+<!-- Open Graph / réseaux sociaux -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Structurre">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Airtable &amp; Notion — Structurre">
+<meta property="og:description" content="Ce que font Airtable et Notion, ce qui les distingue et comment choisir : les deux outils sur lesquels nous construisons vos applications métier.">
+<meta property="og:url" content="https://structurre.fr/outils.html">
+<meta property="og:image" content="https://structurre.fr/assets/img/og-image.svg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/img/favicon.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/assets/css/tailwind.css">
+<link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body class="antialiased">
+<a href="#contenu" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-white focus:px-4 focus:py-2 focus:font-semibold focus:shadow-lg">Aller au contenu</a>
+<header data-header class="entete sticky top-0 z-40">
+  <div class="mx-auto flex h-20 max-w-6xl items-center justify-between px-4 sm:px-6">
+    <a href="/index.html" class="shrink-0" aria-label="Structurre — retour à l'accueil">
+      <img src="/assets/img/logo.svg" alt="Structurre" width="405" height="275" class="h-11 w-auto sm:h-14">
+    </a>
+
+    <nav class="hidden items-center gap-7 lg:flex" aria-label="Navigation principale">
+      <a data-nav-link="index" href="/index.html" class="lien-nav text-sm font-medium">Accueil</a>
+      <a data-nav-link="services" href="/services.html" class="lien-nav text-sm font-medium">Services</a>
+      <a data-nav-link="outils" href="/outils.html" class="lien-nav text-sm font-medium">Outils</a>
+      <a data-nav-link="formation" href="/formation.html" class="lien-nav text-sm font-medium">Formation</a>
+      <a data-nav-link="tarifs" href="/tarifs.html" class="lien-nav text-sm font-medium">Tarifs</a>
+      <a data-nav-link="contact" href="/contact.html" class="lien-nav text-sm font-medium">Contact</a>
+    </nav>
+
+    <div class="hidden items-center gap-5 lg:flex">
+      <a href="tel:+33000000000" class="lien hidden text-sm font-semibold xl:block">01 00 00 00 00</a>
+      <a href="/contact.html" class="btn btn-primaire btn-petit">Demander un devis</a>
+    </div>
+
+    <button type="button" data-menu-button aria-expanded="false" aria-controls="menu-mobile"
+      class="inline-flex h-11 w-11 items-center justify-center rounded-lg border bordure lg:hidden">
+      <span class="sr-only">Ouvrir le menu</span>
+      <svg class="h-5 w-5 accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </div>
+
+  <div id="menu-mobile" data-menu-panel class="hidden border-t bordure bg-white lg:hidden">
+    <nav class="mx-auto max-w-6xl space-y-1 px-4 py-4 sm:px-6" aria-label="Navigation mobile">
+      <a data-nav-link="index" href="/index.html" class="lien-menu px-3 py-3 text-base font-medium">Accueil</a>
+      <a data-nav-link="services" href="/services.html" class="lien-menu px-3 py-3 text-base font-medium">Services</a>
+      <a data-nav-link="outils" href="/outils.html" class="lien-menu px-3 py-3 text-base font-medium">Outils</a>
+      <a data-nav-link="formation" href="/formation.html" class="lien-menu px-3 py-3 text-base font-medium">Formation</a>
+      <a data-nav-link="tarifs" href="/tarifs.html" class="lien-menu px-3 py-3 text-base font-medium">Tarifs</a>
+      <a data-nav-link="contact" href="/contact.html" class="lien-menu px-3 py-3 text-base font-medium">Contact</a>
+      <a href="/contact.html" class="btn btn-primaire mt-3 w-full">Demander un devis</a>
+    </nav>
+  </div>
+</header>
+<main id="contenu">
+
+  <!-- ================= EN-TÊTE DE PAGE ================= -->
+  <section class="fond-alt border-b bordure">
+    <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:py-20">
+      <nav class="text-sm texte-doux" aria-label="Fil d'Ariane">
+        <a href="/index.html" class="lien">Accueil</a>
+        <span class="mx-2" aria-hidden="true">/</span><span>Outils</span>
+      </nav>
+      <h1 class="mt-6 max-w-3xl text-4xl font-extrabold tracking-tight sm:text-5xl">
+        Deux outils, deux logiques
+      </h1>
+      <p class="mt-5 max-w-2xl text-lg texte-doux">
+        Nous ne travaillons pas sur dix plateformes. Airtable et Notion couvrent l'essentiel
+        des besoins internes d'une PME — encore faut-il savoir lequel sert à quoi.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= LES DEUX OUTILS ================= -->
+  <section class="py-20 lg:py-24">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <div class="grid gap-6 md:grid-cols-2">
+
+        <article data-reveal class="carte p-8">
+          <span class="pastille h-12 w-12">
+            <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 4h16v16H4zM4 9h16M9 9v11" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <h2 class="mt-6 text-2xl font-bold">Airtable</h2>
+          <p class="mt-2 text-sm font-semibold accent">La base de données qui se manipule comme un tableur</p>
+          <p class="mt-4 text-sm leading-relaxed texte-doux">
+            Vos informations sont rangées dans des tables reliées entre elles : un client, ses
+            commandes, les produits de chaque commande. Fini les données recopiées à trois
+            endroits — on la saisit une fois, elle se retrouve partout.
+          </p>
+          <h3 class="mt-7 text-sm font-semibold uppercase tracking-wider">Ce qu'on y trouve</h3>
+          <ul class="mt-4 space-y-2 text-sm texte-doux">
+            <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Tables liées, champs typés, calculs entre enregistrements</li>
+            <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Plusieurs vues d'une même table : grille, kanban, calendrier, galerie</li>
+            <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Formulaires de saisie partageables hors de l'équipe</li>
+            <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Automatisations intégrées et interfaces sur mesure par rôle</li>
+          </ul>
+          <h3 class="mt-7 text-sm font-semibold uppercase tracking-wider">À choisir quand</h3>
+          <p class="mt-3 text-sm leading-relaxed texte-doux">
+            vos données ont une structure claire et se comptent : dossiers, commandes,
+            candidatures, interventions, stock. Et quand plusieurs personnes doivent voir la
+            même information sous des angles différents.
+          </p>
+        </article>
+
+        <article data-reveal class="carte p-8">
+          <span class="pastille h-12 w-12">
+            <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 3h9l4 4v14H6zM14 3v5h5M9 13h7M9 17h7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <h2 class="mt-6 text-2xl font-bold">Notion</h2>
+          <p class="mt-2 text-sm font-semibold accent">L'espace de travail où le texte et la donnée cohabitent</p>
+          <p class="mt-4 text-sm leading-relaxed texte-doux">
+            Des pages qui s'emboîtent, et dans ces pages, des bases de données. Une procédure
+            écrite, la liste des projets qu'elle concerne et le compte rendu de la dernière
+            réunion peuvent tenir au même endroit.
+          </p>
+          <h3 class="mt-7 text-sm font-semibold uppercase tracking-wider">Ce qu'on y trouve</h3>
+          <ul class="mt-4 space-y-2 text-sm texte-doux">
+            <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Pages imbriquées : wiki, procédures, comptes rendus</li>
+            <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Bases de données affichables en table, kanban, calendrier ou galerie</li>
+            <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Modèles de page réutilisables pour standardiser les saisies</li>
+            <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Partage fin, page par page, et publication web quand c'est utile</li>
+          </ul>
+          <h3 class="mt-7 text-sm font-semibold uppercase tracking-wider">À choisir quand</h3>
+          <p class="mt-3 text-sm leading-relaxed texte-doux">
+            le contenu compte autant que la donnée : documenter une méthode, centraliser les
+            connaissances de l'équipe, suivre des projets où chaque ligne mérite une vraie page
+            plutôt qu'une cellule.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= COMMENT CHOISIR ================= -->
+  <section class="fond-alt py-20 lg:py-24">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <p class="surtitre">Comment on tranche</p>
+      <h2 class="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">Une question suffit souvent</h2>
+      <p class="mt-4 max-w-2xl text-lg texte-doux">
+        « Est-ce que je veux compter mes lignes, ou les lire ? » Si vous voulez filtrer, trier
+        et totaliser, c'est Airtable. Si vous voulez rédiger, expliquer et retrouver, c'est Notion.
+      </p>
+
+      <div class="mt-12 grid gap-6 md:grid-cols-3">
+        <article data-reveal class="carte p-6">
+          <h3 class="font-semibold">Plutôt Airtable</h3>
+          <ul class="mt-4 space-y-2 text-sm texte-doux">
+            <li class="flex gap-2"><span class="puce" aria-hidden="true">→</span> Suivi commercial et pipeline</li>
+            <li class="flex gap-2"><span class="puce" aria-hidden="true">→</span> Gestion des demandes et des tickets</li>
+            <li class="flex gap-2"><span class="puce" aria-hidden="true">→</span> Stock, matériel, inventaire</li>
+            <li class="flex gap-2"><span class="puce" aria-hidden="true">→</span> Planning d'interventions</li>
+            <li class="flex gap-2"><span class="puce" aria-hidden="true">→</span> Collecte via formulaire externe</li>
+          </ul>
+        </article>
+
+        <article data-reveal class="carte p-6">
+          <h3 class="font-semibold">Plutôt Notion</h3>
+          <ul class="mt-4 space-y-2 text-sm texte-doux">
+            <li class="flex gap-2"><span class="puce" aria-hidden="true">→</span> Base de connaissances interne</li>
+            <li class="flex gap-2"><span class="puce" aria-hidden="true">→</span> Procédures et onboarding</li>
+            <li class="flex gap-2"><span class="puce" aria-hidden="true">→</span> Suivi de projets documentés</li>
+            <li class="flex gap-2"><span class="puce" aria-hidden="true">→</span> Comptes rendus et décisions</li>
+            <li class="flex gap-2"><span class="puce" aria-hidden="true">→</span> Espace partagé avec un client</li>
+          </ul>
+        </article>
+
+        <article data-reveal class="carte fond-voile p-6">
+          <h3 class="font-semibold accent">Souvent, les deux</h3>
+          <p class="mt-4 text-sm leading-relaxed texte-doux">
+            Airtable tient la donnée, Notion tient le contexte, et une automatisation fait le
+            lien entre les deux. Le commercial travaille dans Airtable ; le reste de
+            l'entreprise lit dans Notion un tableau de bord toujours à jour.
+          </p>
+          <p class="mt-4 text-sm leading-relaxed texte-doux">
+            C'est le montage que nous mettons en place le plus souvent.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= AUTOUR DES DEUX ================= -->
+  <section class="py-20 lg:py-24">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <div class="grid gap-14 lg:grid-cols-2 lg:items-start">
+        <div>
+          <p class="surtitre">Autour des deux</p>
+          <h2 class="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">Ce qu'on branche avec</h2>
+          <p class="mt-4 text-lg texte-doux">
+            Un outil interne ne vit jamais seul. Nous relions le vôtre à ce que vous utilisez
+            déjà, sans vous demander d'en changer.
+          </p>
+        </div>
+
+        <ul class="grid gap-4 sm:grid-cols-2">
+          <li data-reveal class="carte p-5">
+            <h3 class="text-sm font-semibold">Automatisation</h3>
+            <p class="mt-1 text-sm texte-doux">Make, Zapier, n8n</p>
+          </li>
+          <li data-reveal class="carte p-5">
+            <h3 class="text-sm font-semibold">Messagerie &amp; agenda</h3>
+            <p class="mt-1 text-sm texte-doux">Google Workspace, Microsoft 365, Slack</p>
+          </li>
+          <li data-reveal class="carte p-5">
+            <h3 class="text-sm font-semibold">Documents &amp; signature</h3>
+            <p class="mt-1 text-sm texte-doux">Drive, SharePoint, outils de signature</p>
+          </li>
+          <li data-reveal class="carte p-5">
+            <h3 class="text-sm font-semibold">Facturation &amp; paiement</h3>
+            <p class="mt-1 text-sm texte-doux">Selon votre logiciel comptable</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="carte mt-12 p-6 text-sm">
+        <p class="font-semibold accent">À savoir sur les licences</p>
+        <p class="mt-2 leading-relaxed texte-doux">
+          Airtable et Notion s'utilisent gratuitement jusqu'à un certain volume, puis sur
+          abonnement facturé par utilisateur directement par l'éditeur. Ces abonnements ne sont
+          pas compris dans nos tarifs : nous vous aidons à choisir l'offre la plus juste, et
+          l'espace est ouvert à votre nom — vous en restez propriétaire.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= APPEL À L'ACTION ================= -->
+  <section class="bande-accent">
+    <div class="mx-auto max-w-6xl px-4 py-16 text-center sm:px-6">
+      <h2 class="text-3xl font-bold tracking-tight">Vous hésitez entre les deux ?</h2>
+      <p class="mx-auto mt-3 max-w-xl text-lg texte-doux">Décrivez votre process : nous vous dirons lequel convient, et pourquoi.</p>
+      <a href="/contact.html" class="btn btn-inverse mt-8">Poser la question</a>
+    </div>
+  </section>
+
+</main>
+<footer class="border-t bordure fond-alt">
+  <div class="mx-auto max-w-6xl px-4 py-14 sm:px-6">
+    <div class="grid gap-10 md:grid-cols-4">
+      <div class="md:col-span-2">
+        <a href="/index.html" class="inline-block" aria-label="Structurre — retour à l'accueil">
+          <img src="/assets/img/logo.svg" alt="Structurre" width="405" height="275" class="h-14 w-auto">
+        </a>
+        <p class="mt-5 max-w-sm text-sm leading-relaxed texte-doux">
+          Agence no-code. Nous concevons vos applications Airtable et Notion, puis nous
+          formons les équipes qui les utilisent au quotidien.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="text-sm font-semibold uppercase tracking-wider">Navigation</h2>
+        <ul class="mt-4 space-y-2.5 text-sm">
+          <li><a href="/index.html" class="lien">Accueil</a></li>
+          <li><a href="/services.html" class="lien">Services</a></li>
+          <li><a href="/outils.html" class="lien">Outils</a></li>
+          <li><a href="/formation.html" class="lien">Conception &amp; formation</a></li>
+          <li><a href="/tarifs.html" class="lien">Tarifs</a></li>
+          <li><a href="/contact.html" class="lien">Contact</a></li>
+          <li><a href="/mentions-legales.html" class="lien">Mentions légales</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="text-sm font-semibold uppercase tracking-wider">Contact</h2>
+        <ul class="mt-4 space-y-2.5 text-sm texte-doux">
+          <li><a href="mailto:contact@structurre.fr" class="lien">contact@structurre.fr</a></li>
+          <li><a href="tel:+33000000000" class="lien">01 00 00 00 00</a></li>
+          <li>00 rue Exemple<br>00000 Ville</li>
+          <li>Lun. – ven. · 9 h – 18 h</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-12 flex flex-col gap-3 border-t bordure pt-6 text-xs texte-doux sm:flex-row sm:items-center sm:justify-between">
+      <p>&copy; <span data-year>2026</span> Structurre. Tous droits réservés.</p>
+      <p>Site hébergé sur Cloudflare Pages · <a href="/mentions-legales.html" class="lien">Mentions légales</a></p>
+    </div>
+  </div>
+</footer>
+<script src="/assets/js/main.js" defer></script>
+</body>
+</html>

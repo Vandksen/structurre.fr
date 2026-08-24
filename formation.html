@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-pt-24">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Conception &amp; formation — Structurre</title>
+<meta name="description" content="Nous concevons votre application Airtable ou Notion, puis nous formons les personnes qui s'en servent : 4 heures comprises dans le forfait, prise en main par rôle et atelier administrateur.">
+<link rel="canonical" href="https://structurre.fr/formation.html">
+<meta name="theme-color" content="#ffffff">
+
+<!-- Open Graph / réseaux sociaux -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Structurre">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Conception &amp; formation — Structurre">
+<meta property="og:description" content="Nous concevons votre application Airtable ou Notion, puis nous formons les personnes qui s'en servent : 4 heures comprises dans le forfait, prise en main par rôle et atelier administrateur.">
+<meta property="og:url" content="https://structurre.fr/formation.html">
+<meta property="og:image" content="https://structurre.fr/assets/img/og-image.svg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/img/favicon.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/assets/css/tailwind.css">
+<link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body class="antialiased">
+<a href="#contenu" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-white focus:px-4 focus:py-2 focus:font-semibold focus:shadow-lg">Aller au contenu</a>
+<header data-header class="entete sticky top-0 z-40">
+  <div class="mx-auto flex h-20 max-w-6xl items-center justify-between px-4 sm:px-6">
+    <a href="/index.html" class="shrink-0" aria-label="Structurre — retour à l'accueil">
+      <img src="/assets/img/logo.svg" alt="Structurre" width="405" height="275" class="h-11 w-auto sm:h-14">
+    </a>
+
+    <nav class="hidden items-center gap-7 lg:flex" aria-label="Navigation principale">
+      <a data-nav-link="index" href="/index.html" class="lien-nav text-sm font-medium">Accueil</a>
+      <a data-nav-link="services" href="/services.html" class="lien-nav text-sm font-medium">Services</a>
+      <a data-nav-link="outils" href="/outils.html" class="lien-nav text-sm font-medium">Outils</a>
+      <a data-nav-link="formation" href="/formation.html" class="lien-nav text-sm font-medium">Formation</a>
+      <a data-nav-link="tarifs" href="/tarifs.html" class="lien-nav text-sm font-medium">Tarifs</a>
+      <a data-nav-link="contact" href="/contact.html" class="lien-nav text-sm font-medium">Contact</a>
+    </nav>
+
+    <div class="hidden items-center gap-5 lg:flex">
+      <a href="tel:+33000000000" class="lien hidden text-sm font-semibold xl:block">01 00 00 00 00</a>
+      <a href="/contact.html" class="btn btn-primaire btn-petit">Demander un devis</a>
+    </div>
+
+    <button type="button" data-menu-button aria-expanded="false" aria-controls="menu-mobile"
+      class="inline-flex h-11 w-11 items-center justify-center rounded-lg border bordure lg:hidden">
+      <span class="sr-only">Ouvrir le menu</span>
+      <svg class="h-5 w-5 accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </div>
+
+  <div id="menu-mobile" data-menu-panel class="hidden border-t bordure bg-white lg:hidden">
+    <nav class="mx-auto max-w-6xl space-y-1 px-4 py-4 sm:px-6" aria-label="Navigation mobile">
+      <a data-nav-link="index" href="/index.html" class="lien-menu px-3 py-3 text-base font-medium">Accueil</a>
+      <a data-nav-link="services" href="/services.html" class="lien-menu px-3 py-3 text-base font-medium">Services</a>
+      <a data-nav-link="outils" href="/outils.html" class="lien-menu px-3 py-3 text-base font-medium">Outils</a>
+      <a data-nav-link="formation" href="/formation.html" class="lien-menu px-3 py-3 text-base font-medium">Formation</a>
+      <a data-nav-link="tarifs" href="/tarifs.html" class="lien-menu px-3 py-3 text-base font-medium">Tarifs</a>
+      <a data-nav-link="contact" href="/contact.html" class="lien-menu px-3 py-3 text-base font-medium">Contact</a>
+      <a href="/contact.html" class="btn btn-primaire mt-3 w-full">Demander un devis</a>
+    </nav>
+  </div>
+</header>
+<main id="contenu">
+
+  <!-- ================= EN-TÊTE DE PAGE ================= -->
+  <section class="fond-alt border-b bordure">
+    <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:py-20">
+      <nav class="text-sm texte-doux" aria-label="Fil d'Ariane">
+        <a href="/index.html" class="lien">Accueil</a>
+        <span class="mx-2" aria-hidden="true">/</span><span>Conception &amp; formation</span>
+      </nav>
+      <h1 class="mt-6 max-w-3xl text-4xl font-extrabold tracking-tight sm:text-5xl">
+        Nous concevons l'outil, puis nous vous le laissons vraiment
+      </h1>
+      <p class="mt-5 max-w-2xl text-lg texte-doux">
+        Une application que personne ne sait modifier redevient un tableur en six mois. C'est
+        pourquoi la formation des utilisateurs n'est pas une option chez nous : quatre heures
+        sont comprises dans le forfait, au même titre que la conception.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= LES DEUX MOITIÉS ================= -->
+  <section class="py-20 lg:py-24">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <div class="grid gap-6 md:grid-cols-2">
+
+        <article data-reveal class="carte p-8">
+          <span class="jeton h-10 w-10 text-sm">1</span>
+          <h2 class="mt-5 text-2xl font-bold">La conception</h2>
+          <p class="mt-2 text-sm font-semibold accent">Nous construisons</p>
+          <p class="mt-4 text-sm leading-relaxed texte-doux">
+            Nous partons de votre process réel, pas d'un modèle générique. L'application est
+            construite avec vous, revue à chaque étape, mise en service avec vos données.
+          </p>
+          <ul class="mt-6 space-y-3 text-sm texte-doux">
+            <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Atelier de cadrage avec les personnes qui font le travail</li>
+            <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Modèle de données, vues et interfaces par rôle</li>
+            <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Automatisations du workflow et branchements aux outils existants</li>
+            <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Reprise de l'historique et mise en production</li>
+          </ul>
+          <a href="/services.html" class="lien-fleche mt-7 text-sm">
+            Le détail des prestations
+            <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10.7 3.3a1 1 0 0 0-1.4 1.4L13.6 9H3a1 1 0 1 0 0 2h10.6l-4.3 4.3a1 1 0 1 0 1.4 1.4l6-6a1 1 0 0 0 0-1.4l-6-6Z"/></svg>
+          </a>
+        </article>
+
+        <article data-reveal class="carte fond-voile p-8">
+          <span class="jeton h-10 w-10 text-sm">2</span>
+          <h2 class="mt-5 text-2xl font-bold">La formation</h2>
+          <p class="mt-2 text-sm font-semibold accent">Puis nous transmettons</p>
+          <p class="mt-4 text-sm leading-relaxed texte-doux">
+            Chaque personne apprend ce qui la concerne, sur l'application qui est la sienne —
+            pas sur un support de cours générique. Le référent interne, lui, va plus loin.
+          </p>
+          <ul class="mt-6 space-y-3 text-sm texte-doux">
+            <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> <span><strong class="font-semibold">4 heures comprises</strong> dans le forfait, au-delà au taux horaire</span></li>
+            <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Session de prise en main, une par rôle utilisateur</li>
+            <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Atelier administrateur pour votre référent interne</li>
+            <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Documentation rédigée dans votre espace, pas dans un PDF perdu</li>
+            <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Permanence questions pendant les premières semaines</li>
+          </ul>
+          <a href="/tarifs.html" class="lien-fleche mt-7 text-sm">
+            Ce que couvre le forfait
+            <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10.7 3.3a1 1 0 0 0-1.4 1.4L13.6 9H3a1 1 0 1 0 0 2h10.6l-4.3 4.3a1 1 0 1 0 1.4 1.4l6-6a1 1 0 0 0 0-1.4l-6-6Z"/></svg>
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CE QUE VOUS SAUREZ FAIRE ================= -->
+  <section class="fond-alt py-20 lg:py-24">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <div class="max-w-2xl">
+        <p class="surtitre">Objectif</p>
+        <h2 class="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
+          Ce que votre équipe sait faire à la fin
+        </h2>
+        <p class="mt-4 text-lg texte-doux">
+          Pas « utiliser Airtable » dans l'absolu. Des gestes précis, sur votre outil,
+          vérifiés en séance.
+        </p>
+      </div>
+
+      <div class="mt-12 grid gap-6 md:grid-cols-2">
+        <article data-reveal class="carte p-8">
+          <h3 class="text-lg font-semibold">Tous les utilisateurs</h3>
+          <ul class="mt-5 space-y-2.5 text-sm texte-doux">
+            <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Saisir et retrouver une information sans se tromper d'endroit</li>
+            <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Filtrer, trier et se créer une vue personnelle</li>
+            <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Comprendre ce qui est automatique et ce qui ne l'est pas</li>
+            <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Savoir à qui s'adresser en interne en cas de doute</li>
+          </ul>
+        </article>
+
+        <article data-reveal class="carte p-8">
+          <h3 class="text-lg font-semibold">Le référent interne</h3>
+          <ul class="mt-5 space-y-2.5 text-sm texte-doux">
+            <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Ajouter un champ, une vue, un statut sans rien casser</li>
+            <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Gérer les accès quand quelqu'un arrive ou part</li>
+            <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Lire une automatisation, la mettre en pause, la relancer</li>
+            <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Exporter les données et repérer ce qui mérite notre intervention</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="carte mt-6 p-6 text-sm">
+        <p class="leading-relaxed texte-doux">
+          <span class="font-semibold accent">Le bon signe :</span> dans les mois qui suivent,
+          vous nous rappelez pour des évolutions de fond — pas pour ajouter une colonne.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FORMATS ================= -->
+  <section class="py-20 lg:py-24">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <p class="surtitre">En pratique</p>
+      <h2 class="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">Comment se passe la formation</h2>
+
+      <div class="mt-12 grid gap-6 md:grid-cols-4">
+        <article data-reveal class="carte p-6">
+          <span class="pastille h-11 w-11">
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M17 20a5 5 0 0 0-10 0M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <h3 class="mt-4 font-semibold">En petit groupe</h3>
+          <p class="mt-2 text-sm leading-relaxed texte-doux">Par rôle, sur vos vrais dossiers. Chacun manipule, personne ne regarde une démonstration.</p>
+        </article>
+        <article data-reveal class="carte p-6">
+          <span class="pastille h-11 w-11">
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 5h18v12H3zM8 21h8M12 17v4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <h3 class="mt-4 font-semibold">Sur place ou à distance</h3>
+          <p class="mt-2 text-sm leading-relaxed texte-doux">À vous de choisir. À distance, la session est enregistrée et vous reste.</p>
+        </article>
+        <article data-reveal class="carte p-6">
+          <span class="pastille h-11 w-11">
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 3h9l4 4v14H6zM14 3v5h5M9 13h7M9 17h5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <h3 class="mt-4 font-semibold">Documentation vivante</h3>
+          <p class="mt-2 text-sm leading-relaxed texte-doux">Rédigée dans votre espace Notion, modifiable par vous, à côté de l'outil qu'elle décrit.</p>
+        </article>
+        <article data-reveal class="carte p-6">
+          <span class="pastille h-11 w-11">
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 8v5l3 2M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <h3 class="mt-4 font-semibold">Puis on reste joignables</h3>
+          <p class="mt-2 text-sm leading-relaxed texte-doux">Les questions des premières semaines font partie du forfait, en plus des 4 heures. Au-delà, c'est à l'heure.</p>
+        </article>
+      </div>
+
+      <div class="carte fond-voile mt-12 p-6 sm:p-8">
+        <p class="font-semibold accent">Quatre heures comprises dans le forfait</p>
+        <p class="mt-3 text-sm leading-relaxed texte-doux">
+          Le forfait de 1 600 € HT couvre <strong class="font-semibold">4 heures de
+          formation</strong>. C'est ce qu'il faut, dans la grande majorité des cas, pour
+          couvrir une équipe : deux sessions de prise en main d'une heure selon les rôles, un
+          atelier administrateur d'une heure avec votre référent interne, et une heure de
+          reprise quelques jours plus tard, une fois que les vraies questions sont sorties.
+        </p>
+        <p class="mt-3 text-sm leading-relaxed texte-doux">
+          Au-delà — équipe nombreuse, nouvelle recrue, second référent à former — nous
+          intervenons au taux horaire indiqué sur la
+          <a href="/tarifs.html" class="lien font-medium">grille tarifaire</a>. Le besoin est
+          estimé dès l'atelier de cadrage, pas découvert en fin de mission.
+        </p>
+        <p class="mt-3 text-sm leading-relaxed texte-doux">
+          Ces heures font partie de la mission de conception : elles ne constituent pas une
+          action de formation professionnelle au sens du Code du travail et ne sont pas
+          finançables par un OPCO.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= APPEL À L'ACTION ================= -->
+  <section class="bande-accent">
+    <div class="mx-auto max-w-6xl px-4 py-16 text-center sm:px-6">
+      <h2 class="text-3xl font-bold tracking-tight">Une équipe à embarquer ?</h2>
+      <p class="mx-auto mt-3 max-w-xl text-lg texte-doux">Dites-nous qui utilisera l'outil : nous calibrons la formation en conséquence.</p>
+      <a href="/contact.html" class="btn btn-inverse mt-8">Nous contacter</a>
+    </div>
+  </section>
+
+</main>
+<footer class="border-t bordure fond-alt">
+  <div class="mx-auto max-w-6xl px-4 py-14 sm:px-6">
+    <div class="grid gap-10 md:grid-cols-4">
+      <div class="md:col-span-2">
+        <a href="/index.html" class="inline-block" aria-label="Structurre — retour à l'accueil">
+          <img src="/assets/img/logo.svg" alt="Structurre" width="405" height="275" class="h-14 w-auto">
+        </a>
+        <p class="mt-5 max-w-sm text-sm leading-relaxed texte-doux">
+          Agence no-code. Nous concevons vos applications Airtable et Notion, puis nous
+          formons les équipes qui les utilisent au quotidien.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="text-sm font-semibold uppercase tracking-wider">Navigation</h2>
+        <ul class="mt-4 space-y-2.5 text-sm">
+          <li><a href="/index.html" class="lien">Accueil</a></li>
+          <li><a href="/services.html" class="lien">Services</a></li>
+          <li><a href="/outils.html" class="lien">Outils</a></li>
+          <li><a href="/formation.html" class="lien">Conception &amp; formation</a></li>
+          <li><a href="/tarifs.html" class="lien">Tarifs</a></li>
+          <li><a href="/contact.html" class="lien">Contact</a></li>
+          <li><a href="/mentions-legales.html" class="lien">Mentions légales</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="text-sm font-semibold uppercase tracking-wider">Contact</h2>
+        <ul class="mt-4 space-y-2.5 text-sm texte-doux">
+          <li><a href="mailto:contact@structurre.fr" class="lien">contact@structurre.fr</a></li>
+          <li><a href="tel:+33000000000" class="lien">01 00 00 00 00</a></li>
+          <li>00 rue Exemple<br>00000 Ville</li>
+          <li>Lun. – ven. · 9 h – 18 h</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-12 flex flex-col gap-3 border-t bordure pt-6 text-xs texte-doux sm:flex-row sm:items-center sm:justify-between">
+      <p>&copy; <span data-year>2026</span> Structurre. Tous droits réservés.</p>
+      <p>Site hébergé sur Cloudflare Pages · <a href="/mentions-legales.html" class="lien">Mentions légales</a></p>
+    </div>
+  </div>
+</footer>
+<script src="/assets/js/main.js" defer></script>
+</body>
+</html>
