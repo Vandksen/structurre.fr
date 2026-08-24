@@ -1,0 +1,22 @@
+{
+  // Cloudflare déploie ce dépôt en « Worker + assets statiques » (Workers Builds),
+  // dont la commande de déploiement est `wrangler versions upload` : sans ce
+  // fichier, elle échoue sur « Missing entry-point to Worker script or to assets
+  // directory ». Il n'y a aucun code Worker, seulement des fichiers à servir.
+  //
+  // "name" DOIT correspondre au nom du Worker dans le dashboard Cloudflare.
+  "name": "structurre-fr",
+  "compatibility_date": "2026-08-24",
+  "assets": {
+    // Le site est servi depuis la racine du dépôt ; .assetsignore écarte
+    // node_modules et les sources (voir ce fichier).
+    "directory": ".",
+    // Défaut de Cloudflare, rappelé ici parce que toute la convention d'URL du
+    // site en dépend : /services est servi depuis services.html, et
+    // /services.html redirige vers /services (cf. le piège documenté dans
+    // _redirects — ne pas réintroduire de règle qui boucle là-dessus).
+    "html_handling": "auto-trailing-slash",
+    // Sert 404.html avec un vrai code 404 sur une URL inconnue.
+    "not_found_handling": "404-page"
+  }
+}

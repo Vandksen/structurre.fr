@@ -1,13 +1,22 @@
 # Fichiers présents dans le dépôt mais qui n'ont rien à faire sur le site publié.
 #
-# Le dossier de sortie déclaré dans Cloudflare Pages est la racine du dépôt (« / ») :
-# sans ce fichier, Cloudflare tente de publier node_modules, où son propre outil de
-# déploiement installe le binaire workerd (144 Mio) — au-delà de la limite de 25 Mio
-# par fichier. Syntaxe identique à .gitignore.
+# Le dossier d'assets est la racine du dépôt (voir wrangler.jsonc) et wrangler
+# téléverse TOUT ce qu'il y trouve, fichiers cachés compris : sans ce fichier, il
+# publierait node_modules — où l'outil de déploiement installe le binaire workerd
+# (144 Mio), au-delà de la limite de 25 Mio par fichier — ainsi que .git.
+# Syntaxe identique à .gitignore.
 
 node_modules
 
+# Le dépôt est cloné avec son historique : sans cette ligne, tout .git serait
+# publié (wrangler n'écarte aucun fichier caché de lui-même).
+.git
+
 # Sources et configuration : utiles au dépôt, inutiles aux visiteurs.
+wrangler.jsonc
+.gitignore
+.DS_Store
+.wrangler
 package.json
 package-lock.json
 README.md

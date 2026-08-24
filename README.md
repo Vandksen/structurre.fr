@@ -25,8 +25,9 @@ Aucune base de données, aucun serveur : 100 % statique, 100 % gratuit.
 │   │   ├── main.js         Menu mobile, apparition au scroll, lien actif
 │   │   └── contact.js      Envoi du formulaire (config Web3Forms/Formspree)
 │   └── img/                logo.svg, favicon.svg, og-image.svg
-├── _headers, _redirects    Config Cloudflare Pages
-├── .assetsignore           Exclut node_modules du site publié (Cloudflare)
+├── _headers, _redirects    En-têtes et redirections (Cloudflare)
+├── wrangler.jsonc          Config du déploiement Cloudflare (Worker + assets)
+├── .assetsignore           Ce qui ne doit pas être publié (node_modules, .git, sources)
 ├── vercel.json             Config Vercel
 ├── robots.txt, sitemap.xml SEO
 └── .github/workflows/      CI : vérifie que la CSS se compile
@@ -120,26 +121,38 @@ git push -u origin main
 
 ## 4. Déployer
 
-### Option A — Cloudflare Pages (recommandé pour un domaine .fr)
+### Option A — Cloudflare (recommandé pour un domaine .fr)
 
-1. Cloudflare Dashboard → **Workers & Pages** → **Create** → **Pages** → **Connect to Git**
-2. Sélectionnez le dépôt, puis :
-   - Framework preset : `None`
-   - Build command : `npm run build`
-   - Build output directory : `/`
+Le projet est déployé en **Worker + assets statiques** (Workers Builds), pas en Pages :
+Cloudflare lance `npm run build` puis `npx wrangler versions upload`. Cette commande lit
+`wrangler.jsonc` — il n'y a aucun code Worker, seulement des fichiers à servir.
+
+1. Cloudflare Dashboard → **Workers & Pages** → **Create** → **Import a repository**
+2. Build command : `npm run build` · Deploy command : laissée par défaut
 3. Variables d'environnement → ajoutez `NODE_VERSION` = `20` (Tailwind v4 exige Node 20+)
-4. **Save and Deploy**
-5. Onglet **Custom domains** → ajoutez `structurre.fr` et `www.structurre.fr`
+4. Onglet **Custom domains** → ajoutez `structurre.fr` et `www.structurre.fr`
 
-Deux pièges déjà rencontrés, à ne pas réintroduire :
+Le champ `name` de `wrangler.jsonc` **doit être exactement le nom du Worker** affiché dans
+le dashboard, sinon l'upload part sur un autre Worker (ou échoue).
 
-- **`.assetsignore`** — le dossier de sortie étant la racine du dépôt, Cloudflare publierait
-  aussi `node_modules`, où son propre outil de déploiement installe un binaire de 144 Mio.
-  Ne supprimez pas ce fichier : le déploiement échouerait avec `Asset too large`.
+Trois pièges déjà rencontrés, à ne pas réintroduire :
+
+- **`wrangler.jsonc`** — sans lui, le déploiement échoue sur
+  `Missing entry-point to Worker script or to assets directory`.
+- **`.assetsignore`** — le dossier d'assets étant la racine du dépôt, wrangler publierait
+  aussi `node_modules` (binaire de 144 Mio → `Asset too large`) et `.git`, car il n'écarte
+  aucun fichier caché de lui-même. Ne supprimez pas ce fichier.
+  Pour vérifier ce qui partirait en ligne, sans compte ni déploiement :
+
+  ```bash
+  npx wrangler deploy --dry-run
+  ```
+
 - **`_redirects`** — Cloudflare sert les pages sans extension (`/services`) et redirige
   lui-même `/services.html` vers `/services`. Une règle `/services /services.html` boucle
   donc à l'infini (`ERR_TOO_MANY_REDIRECTS`). Seuls les alias vers un nom *différent*
-  (`/prix` → `/tarifs`) ont leur place dans ce fichier.
+  (`/prix` → `/tarifs`) ont leur place dans ce fichier. `_headers` et `_redirects` ne sont
+  pas téléversés comme des fichiers : wrangler les lit et les convertit en configuration.
 
 Les liens internes, les URL canoniques et le `sitemap.xml` sont donc écrits **sans `.html`**.
 Gardez cette convention si vous ajoutez une page.
