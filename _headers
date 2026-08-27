@@ -5,5 +5,12 @@
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: geolocation=(), microphone=(), camera=()
 
+# Les fichiers d'/assets sont gardés un an par les navigateurs, sans jamais être
+# revalidés (immutable). Une modification de tailwind.css, site.css ou main.js
+# n'atteint donc PAS les visiteurs déjà venus tant que l'URL reste identique.
+#
+# À CHAQUE modification de ces fichiers, incrémentez le ?v=AAAAMMJJ des balises
+# <link> et <script> dans les pages HTML — sans quoi la mise en page part en
+# vrille chez les visiteurs de retour (grille absente, images en pleine largeur).
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
