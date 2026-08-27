@@ -24,7 +24,8 @@
   --gris-ligne: #e5e9f0;    /* filets et bordures */
   --gris-fond: #f7f9fc;     /* sections alternées */
 
-  --rayon: 10px;            /* angles arrondis, valeur unique pour tout le site */
+  --rayon: 10px;            /* angles arrondis : cartes, champs, surfaces */
+  --rayon-bouton: 4px;      /* boutons uniquement — angles plus francs que les surfaces */
 
   /* Les utilitaires Tailwind `rounded-lg/xl/2xl/3xl` lisent ces variables : on
      les aligne sur --rayon pour que HTML et CSS maison restent d'accord.
@@ -137,7 +138,7 @@ body {
   justify-content: center;
   gap: 0.5rem;
   border: 1px solid transparent;
-  border-radius: var(--rayon);
+  border-radius: var(--rayon-bouton);
   padding: 0.875rem 1.5rem;
   font-size: 1rem;
   font-weight: 600;
