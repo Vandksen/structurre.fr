@@ -69,7 +69,7 @@ Le modèle tarifaire est annoncé partout de la même façon — à ne modifier 
 près, `tarifs.html`, puis à répercuter dans les rappels de `index.html`, `services.html` et
 `formation.html` :
 
-- **1 600 € HT** l'application couvrant un workflow complet, **4 heures de formation
+- **1 800 € HT** l'application couvrant un workflow complet, **4 heures de formation
   comprises** ;
 - **100 à 150 € HT de l'heure** pour les évolutions ultérieures et les heures de formation
   supplémentaires, sans abonnement ;
