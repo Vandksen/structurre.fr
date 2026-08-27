@@ -131,6 +131,21 @@ body {
   box-shadow: 0 8px 24px -20px rgb(34 34 34 / 0.6);
 }
 
+/* --- Bouton du menu (petits écrans) ---------------------------------------
+   L'icône est faite de trois barres en perspective, dessinées au trait. Le
+   chemin .icone-menu-faces recouvre l'intérieur de ces barres : transparent au
+   repos, teinté au survol et tant que le menu reste ouvert. */
+.icone-menu-faces {
+  fill: rgb(32 125 251 / 0.28);
+  opacity: 0;
+  transition: opacity 0.18s ease;
+}
+[data-menu-button]:hover .icone-menu-faces,
+[data-menu-button]:focus-visible .icone-menu-faces,
+[data-menu-button][aria-expanded="true"] .icone-menu-faces {
+  opacity: 1;
+}
+
 /* --- Boutons -------------------------------------------------------------- */
 .btn {
   display: inline-flex;
