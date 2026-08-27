@@ -15,7 +15,7 @@
   "use strict";
 
   var PROVIDER = "web3forms"; // "web3forms" | "formspree"
-  var ACCESS_KEY = "VOTRE_CLE_WEB3FORMS"; // ← à remplacer (Web3Forms)
+  var ACCESS_KEY = "76a8c9cb-2a30-4516-b9b3-fbb0ab0a8861"; // clé publique Web3Forms
   var ENDPOINT =
     PROVIDER === "formspree"
       ? "https://formspree.io/f/VOTRE_ID_FORMSPREE" // ← à remplacer (Formspree)
