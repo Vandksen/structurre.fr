@@ -10,6 +10,7 @@ Aucune base de données, aucun serveur : 100 % statique, 100 % gratuit.
 .
 ├── index.html              Accueil
 ├── services.html           Détail des prestations + FAQ
+├── cas-clients.html        Exemples de réalisations + FAQ
 ├── outils.html             Airtable et Notion, comment choisir
 ├── formation.html          Conception + formation des utilisateurs
 ├── tarifs.html             Grille tarifaire
@@ -35,8 +36,8 @@ Aucune base de données, aucun serveur : 100 % statique, 100 % gratuit.
 
 ## Charte d'interface
 
-Six pages en navigation : **Accueil**, **Services**, **Outils**, **Formation**, **Tarifs**,
-**Contact** (plus `mentions-legales.html` et `404.html`, accessibles par le pied de page mais
+Huit pages en navigation : **Accueil**, **Services**, **Cas clients**, **Outils**,
+**Formation**, **Tarifs**, **À propos**, **Contact** (plus `mentions-legales.html` et `404.html`, accessibles par le pied de page mais
 hors navigation principale). Au-delà de 1024 px la navigation est déployée ; en dessous, elle
 passe dans le menu déroulant.
 

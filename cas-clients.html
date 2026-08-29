@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-pt-24">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Structurre — Cas clients</title>
+<meta name="description" content="Trois outils métier construits sans code : CRM immobilier, cabinet juridique, cabinet comptable. Situation de départ, objectif, solution et résultats.">
+<link rel="canonical" href="https://structurre.fr/cas-clients">
+<meta name="theme-color" content="#ffffff">
+
+<!-- Open Graph / réseaux sociaux -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Structurre">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Structurre — Cas clients">
+<meta property="og:description" content="Trois outils métier construits sans code : CRM immobilier, cabinet juridique, cabinet comptable. Situation de départ, objectif, solution et résultats.">
+<meta property="og:url" content="https://structurre.fr/cas-clients">
+<meta property="og:image" content="https://structurre.fr/assets/img/og-image.svg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/img/favicon.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/assets/css/tailwind.css?v=20260829-1">
+<link rel="stylesheet" href="/assets/css/site.css?v=20260829-1">
+</head>
+<body class="antialiased">
+<a href="#contenu" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-white focus:px-4 focus:py-2 focus:font-semibold focus:shadow-lg">Aller au contenu</a>
+<header data-header class="entete sticky top-0 z-40">
+  <div class="mx-auto flex h-20 max-w-6xl items-center justify-between px-4 sm:px-6">
+    <a href="/" class="shrink-0" aria-label="Structurre — retour à l'accueil">
+      <img src="/assets/img/logo.svg" alt="Structurre" width="405" height="275" class="h-11 w-auto sm:h-14">
+    </a>
+
+    <nav class="hidden items-center gap-7 lg:flex" aria-label="Navigation principale">
+      <a data-nav-link="index" href="/" class="lien-nav text-sm font-medium">Accueil</a>
+      <a data-nav-link="services" href="/services" class="lien-nav text-sm font-medium">Services</a>
+      <a data-nav-link="cas-clients" href="/cas-clients" class="lien-nav text-sm font-medium">Cas clients</a>
+      <a data-nav-link="outils" href="/outils" class="lien-nav text-sm font-medium">Outils</a>
+      <a data-nav-link="formation" href="/formation" class="lien-nav text-sm font-medium">Formation</a>
+      <a data-nav-link="tarifs" href="/tarifs" class="lien-nav text-sm font-medium">Tarifs</a>
+      <a data-nav-link="a-propos" href="/a-propos" class="lien-nav text-sm font-medium">À propos</a>
+      <a data-nav-link="contact" href="/contact" class="lien-nav text-sm font-medium">Contact</a>
+    </nav>
+
+    <div class="hidden items-center gap-5 lg:flex">
+      <a href="https://wa.me/33680899625" target="_blank" rel="noopener"
+        class="hidden text-right leading-tight xl:block">
+        <span class="lien inline-flex items-center gap-1.5 text-sm font-semibold">
+          <svg class="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.87 9.87 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15a8.23 8.23 0 0 1-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.41a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.16.25-.64.81-.79.98-.14.16-.29.18-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.16 0-.43.06-.65.31-.23.25-.85.83-.85 2.03 0 1.2.87 2.35.99 2.51.12.16 1.71 2.61 4.15 3.66.58.25 1.03.4 1.38.51.58.19 1.11.16 1.53.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.12-.22-.18-.47-.3Z"/></svg>
+          06 80 89 96 25
+        </span>
+        <span class="mt-0.5 block text-[11px] texte-doux">WhatsApp · à privilégier</span>
+      </a>
+      <a href="/contact" class="btn btn-primaire btn-petit">Demander un devis</a>
+    </div>
+
+    <button type="button" data-menu-button aria-expanded="false" aria-controls="menu-mobile"
+      class="inline-flex h-11 w-11 items-center justify-center rounded-lg lg:hidden">
+      <span class="sr-only">Ouvrir le menu</span>
+      <svg class="icone-menu h-8 w-8 accent" viewBox="0 0 50 50" fill="currentColor" aria-hidden="true">
+        <!-- Intérieur des trois barres : incolore au repos, teinté au survol (site.css). -->
+        <path class="icone-menu-faces" d="M 15 2.1953125 L 38.5 15.761719 L 35 17.783203 L 11.501953 4.2148438 Z M 11.25 4.6445312 L 34.75 18.216797 L 34.75 22.257812 L 11.25 8.6914062 Z M 38.75 16.195312 L 38.75 20.236328 L 35.25 22.257812 L 35.25 18.216797 Z M 15 14.896484 L 38.501953 28.464844 L 35 30.484375 L 11.501953 16.916016 Z M 11.25 17.347656 L 34.75 30.917969 L 34.75 34.958984 L 11.25 21.392578 Z M 38.75 28.896484 L 38.75 32.939453 L 35.25 34.958984 L 35.25 30.917969 Z M 15 27.597656 L 38.5 41.166016 L 35 43.185547 L 11.503906 29.617188 Z M 11.25 30.048828 L 34.75 43.619141 L 34.75 47.660156 L 11.25 34.09375 Z M 38.75 41.599609 L 38.75 45.640625 L 35.25 47.660156 L 35.25 43.619141 Z"/>
+        <path d="M 15.001953 0.75585938 L 14.501953 1.0429688 L 10.501953 3.34375 L 10 3.6308594 L 10 8.8300781 L 10 9.40625 L 10.5 9.6953125 L 34.5 23.556641 L 35 23.845703 L 35.5 23.556641 L 39.5 21.246094 L 40 20.957031 L 40 20.380859 L 40 15.759766 L 40 15.181641 L 39.5 14.892578 L 15.5 1.0429688 L 15.001953 0.75585938 z M 15 2.1953125 L 38.5 15.761719 L 35 17.783203 L 11.501953 4.2148438 L 15 2.1953125 z M 11.25 4.6445312 L 34.75 18.216797 L 34.75 22.257812 L 11.25 8.6914062 L 11.25 4.6445312 z M 15 13.455078 L 14.5 13.744141 L 10.5 16.054688 L 10 16.34375 L 10 16.919922 L 10 21.539062 L 10 22.117188 L 10.5 22.40625 L 34.5 36.257812 L 35 36.546875 L 35.5 36.257812 L 39.5 33.947266 L 40 33.658203 L 40 33.080078 L 40 28.460938 L 40 27.882812 L 39.5 27.59375 L 15.5 13.742188 L 15 13.455078 z M 15 14.896484 L 38.501953 28.464844 L 35 30.484375 L 11.501953 16.916016 L 15 14.896484 z M 38.75 16.195312 L 38.75 20.236328 L 35.25 22.257812 L 35.25 18.216797 L 38.75 16.195312 z M 11.25 17.347656 L 34.75 30.917969 L 34.75 34.958984 L 11.25 21.392578 L 11.25 17.347656 z M 15 26.154297 L 14.5 26.443359 L 10.5 28.753906 L 10 29.042969 L 10 29.619141 L 10 34.240234 L 10 34.818359 L 10.5 35.107422 L 34.5 48.957031 L 35 49.246094 L 35.5 48.957031 L 39.5 46.646484 L 40 46.357422 L 40 45.779297 L 40 41.169922 L 40 40.59375 L 39.5 40.304688 L 15.5 26.443359 L 15 26.154297 z M 15 27.597656 L 38.5 41.166016 L 35 43.185547 L 11.503906 29.617188 L 15 27.597656 z M 38.75 28.896484 L 38.75 32.939453 L 35.25 34.958984 L 35.25 30.917969 L 38.75 28.896484 z M 11.25 30.048828 L 34.75 43.619141 L 34.75 47.660156 L 11.25 34.09375 L 11.25 30.048828 z M 38.75 41.599609 L 38.75 45.640625 L 35.25 47.660156 L 35.25 43.619141 L 38.75 41.599609 z"/>
+      </svg>
+    </button>
+  </div>
+
+  <div id="menu-mobile" data-menu-panel class="hidden border-t bordure bg-white lg:hidden">
+    <nav class="mx-auto max-w-6xl space-y-1 px-4 py-4 sm:px-6" aria-label="Navigation mobile">
+      <a data-nav-link="index" href="/" class="lien-menu px-3 py-3 text-base font-medium">Accueil</a>
+      <a data-nav-link="services" href="/services" class="lien-menu px-3 py-3 text-base font-medium">Services</a>
+      <a data-nav-link="cas-clients" href="/cas-clients" class="lien-menu px-3 py-3 text-base font-medium">Cas clients</a>
+      <a data-nav-link="outils" href="/outils" class="lien-menu px-3 py-3 text-base font-medium">Outils</a>
+      <a data-nav-link="formation" href="/formation" class="lien-menu px-3 py-3 text-base font-medium">Formation</a>
+      <a data-nav-link="tarifs" href="/tarifs" class="lien-menu px-3 py-3 text-base font-medium">Tarifs</a>
+      <a data-nav-link="a-propos" href="/a-propos" class="lien-menu px-3 py-3 text-base font-medium">À propos</a>
+      <a data-nav-link="contact" href="/contact" class="lien-menu px-3 py-3 text-base font-medium">Contact</a>
+      <a href="https://wa.me/33680899625" target="_blank" rel="noopener"
+        class="lien-menu px-3 py-3 text-base font-medium">
+        <span class="inline-flex items-center gap-2 align-middle">
+          <svg class="h-4 w-4 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.87 9.87 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15a8.23 8.23 0 0 1-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.41a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.16.25-.64.81-.79.98-.14.16-.29.18-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.16 0-.43.06-.65.31-.23.25-.85.83-.85 2.03 0 1.2.87 2.35.99 2.51.12.16 1.71 2.61 4.15 3.66.58.25 1.03.4 1.38.51.58.19 1.11.16 1.53.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.12-.22-.18-.47-.3Z"/></svg>
+          WhatsApp · 06 80 89 96 25
+        </span>
+        <span class="text-xs texte-doux">à privilégier</span>
+      </a>
+      <a href="/contact" class="btn btn-primaire mt-3 w-full">Demander un devis</a>
+    </nav>
+  </div>
+</header>
+<main id="contenu">
+
+  <!-- ================= EN-TÊTE DE PAGE ================= -->
+  <section class="fond-alt border-b bordure">
+    <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:py-20">
+      <nav class="text-sm texte-doux" aria-label="Fil d'Ariane">
+        <a href="/" class="lien">Accueil</a>
+        <span class="mx-2" aria-hidden="true">/</span><span>Cas clients</span>
+      </nav>
+      <h1 class="mt-6 max-w-3xl text-4xl font-extrabold tracking-tight sm:text-5xl">
+        Des outils qui s'adaptent à vos process
+      </h1>
+      <p class="mt-5 max-w-2xl text-lg texte-doux">
+        Des outils sur-mesure, sans code, qui épousent vos processus métiers — et non l'inverse.
+      </p>
+
+      <ul class="mt-10 grid gap-4 sm:grid-cols-3">
+        <li class="carte p-5">
+          <h2 class="text-sm font-semibold">Livraison rapide</h2>
+          <p class="mt-1 text-sm texte-doux">Un prototype d'abord, puis des itérations.</p>
+        </li>
+        <li class="carte p-5">
+          <h2 class="text-sm font-semibold">Coût maîtrisé</h2>
+          <p class="mt-1 text-sm texte-doux">On évite le développement lourd.</p>
+        </li>
+        <li class="carte p-5">
+          <h2 class="text-sm font-semibold">Outil évolutif</h2>
+          <p class="mt-1 text-sm texte-doux">Vos process changent, l'outil suit.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ================= POUR QUI ? ================= -->
+  <section class="py-20 lg:py-24">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <div class="grid gap-14 lg:grid-cols-2 lg:items-start">
+        <div>
+          <p class="surtitre">Pour qui ?</p>
+          <h2 class="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">Vous êtes concerné si…</h2>
+          <p class="mt-4 text-lg texte-doux">
+            Les trois situations ci-contre reviennent dans presque toutes nos missions. Si l'une
+            d'elles vous parle, un outil métier a de fortes chances de vous faire gagner du temps.
+          </p>
+        </div>
+
+        <ul class="grid gap-4">
+          <li data-reveal class="carte p-6">
+            <h3 class="font-semibold">Vos opérations tiennent sur des tableurs</h3>
+            <p class="mt-2 text-sm leading-relaxed texte-doux">
+              Versions multiples, erreurs de saisie, ressaisies d'un fichier à l'autre.
+            </p>
+          </li>
+          <li data-reveal class="carte p-6">
+            <h3 class="font-semibold">Il vous manque une source unique de vérité</h3>
+            <p class="mt-2 text-sm leading-relaxed texte-doux">
+              Dossiers, clients, facturation, échéances : chacun a sa version.
+            </p>
+          </li>
+          <li data-reveal class="carte p-6">
+            <h3 class="font-semibold">Vous avez besoin de pilotage et de workflows</h3>
+            <p class="mt-2 text-sm leading-relaxed texte-doux">
+              Tableaux de bord d'un côté, relances et validations de l'autre.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= NOTRE APPROCHE ================= -->
+  <section class="fond-alt py-20 lg:py-24">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <p class="surtitre">Notre approche</p>
+      <h2 class="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">Simple et efficace</h2>
+
+      <ol class="mt-12 grid gap-6 md:grid-cols-4">
+        <li data-reveal class="carte p-6">
+          <span class="jeton h-10 w-10 text-sm">1</span>
+          <h3 class="mt-4 font-semibold">Atelier process</h3>
+          <p class="mt-2 text-sm leading-relaxed texte-doux">On cartographie vos objets clés — clients, dossiers, opérations — et vos étapes.</p>
+        </li>
+        <li data-reveal class="carte p-6">
+          <span class="jeton h-10 w-10 text-sm">2</span>
+          <h3 class="mt-4 font-semibold">Prototype no-code</h3>
+          <p class="mt-2 text-sm leading-relaxed texte-doux">Une V1 concrète, testable rapidement, plutôt qu'un cahier des charges.</p>
+        </li>
+        <li data-reveal class="carte p-6">
+          <span class="jeton h-10 w-10 text-sm">3</span>
+          <h3 class="mt-4 font-semibold">Itérations</h3>
+          <p class="mt-2 text-sm leading-relaxed texte-doux">On ajuste avec vos retours pour coller à la réalité du terrain.</p>
+        </li>
+        <li data-reveal class="carte p-6">
+          <span class="jeton h-10 w-10 text-sm">4</span>
+          <h3 class="mt-4 font-semibold">Autonomie</h3>
+          <p class="mt-2 text-sm leading-relaxed texte-doux">Documentation et formation pour faire évoluer l'outil sans nous.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ================= LES TROIS BRIQUES ================= -->
+  <section class="py-20 lg:py-24">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <p class="surtitre">Ce qu'on construit</p>
+      <h2 class="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">Trois briques, toujours les mêmes</h2>
+
+      <div class="mt-12 grid gap-6 md:grid-cols-3">
+        <article data-reveal class="carte p-8">
+          <span class="pastille h-12 w-12">
+            <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 6c0-1.7 3.6-3 8-3s8 1.3 8 3-3.6 3-8 3-8-1.3-8-3Zm0 0v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <h3 class="mt-6 text-xl font-bold">Base de données métier</h3>
+          <p class="mt-3 text-sm leading-relaxed texte-doux">
+            Un référentiel unique et structuré : vos objets, leurs liens, leurs champs. Tout le
+            reste s'appuie dessus.
+          </p>
+        </article>
+
+        <article data-reveal class="carte p-8">
+          <span class="pastille h-12 w-12">
+            <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <h3 class="mt-6 text-xl font-bold">Process &amp; automatisations</h3>
+          <p class="mt-3 text-sm leading-relaxed texte-doux">
+            Notifications, relances, calculs, génération de documents : ce que personne ne
+            devrait avoir à faire à la main.
+          </p>
+        </article>
+
+        <article data-reveal class="carte p-8">
+          <span class="pastille h-12 w-12">
+            <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 4h18v13H3zM3 9h18M9 21h6M12 17v4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <h3 class="mt-6 text-xl font-bold">Interfaces</h3>
+          <p class="mt-3 text-sm leading-relaxed texte-doux">
+            Vues métier, formulaires, tableaux de bord et droits d'accès : chacun voit ce qui le
+            concerne, et rien d'autre.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EXEMPLES DE RÉALISATIONS =================
+       Les pictogrammes des quatre rubriques (situation, objectif, solution,
+       résultats) et du bandeau « évolutif » sont des SVG au trait, comme le
+       reste du site : ils héritent de la couleur d'emphase via .accent. -->
+  <section id="exemples" class="fond-alt py-20 lg:py-24">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <p class="surtitre">Exemples de réalisations</p>
+      <h2 class="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">Trois outils, trois métiers</h2>
+      <p class="mt-4 max-w-2xl text-lg texte-doux">
+        Même méthode à chaque fois : on part de la situation réelle, on fixe l'objectif, on
+        construit, puis on mesure ce qui a changé.
+      </p>
+
+      <div class="mt-12 space-y-6">
+
+        <!-- ---- CRM immobilier ---- -->
+        <article data-reveal class="carte p-8">
+          <p class="text-sm font-semibold uppercase tracking-wider accent">CRM immobilier</p>
+          <h3 class="mt-2 text-2xl font-bold">Gestion d'opérations</h3>
+
+          <div class="mt-8 grid gap-8 sm:grid-cols-2">
+            <div>
+              <div class="flex items-center gap-3">
+                <svg class="h-6 w-6 shrink-0 accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="3.2" fill="currentColor" stroke="none"/></svg>
+                <h4 class="text-sm font-semibold uppercase tracking-wider">Situation (avant)</h4>
+              </div>
+              <ul class="mt-4 space-y-2 text-sm texte-doux">
+                <li class="flex gap-2"><span class="puce" aria-hidden="true">→</span> Gestion des opérations sur des tableurs en ligne</li>
+                <li class="flex gap-2"><span class="puce" aria-hidden="true">→</span> Suivi dispersé : fonds propres, grille de prix, marchés, atterrissage</li>
+                <li class="flex gap-2"><span class="puce" aria-hidden="true">→</span> Manque de visibilité sur les factures à recevoir et à payer</li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="flex items-center gap-3">
+                <svg class="h-6 w-6 shrink-0 accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="1.5"/><path d="M12 17v4M8 21h8" stroke-linecap="round"/><circle cx="8" cy="8.5" r="1.3"/><circle cx="16" cy="12.8" r="1.3"/><path d="m9.2 9.6 5.6 2.6" stroke-linecap="round"/></svg>
+                <h4 class="text-sm font-semibold uppercase tracking-wider">Objectif</h4>
+              </div>
+              <ul class="mt-4 space-y-2 text-sm texte-doux">
+                <li class="flex gap-2"><span class="puce" aria-hidden="true">→</span> Centraliser le suivi des opérations immobilières</li>
+                <li class="flex gap-2"><span class="puce" aria-hidden="true">→</span> Sécuriser les travaux modificatifs acquéreur (TMA) et les avenants</li>
+                <li class="flex gap-2"><span class="puce" aria-hidden="true">→</span> Piloter les marchés — reste à payer, reste à recevoir</li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="flex items-center gap-3">
+                <svg class="h-6 w-6 shrink-0 accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M10 4a2 2 0 0 1 4 0v1h3a1 1 0 0 1 1 1v3h1a2 2 0 0 1 0 4h-1v3a1 1 0 0 1-1 1h-3v-1a2 2 0 0 0-4 0v1H7a1 1 0 0 1-1-1v-3H5a2 2 0 0 0 0-4h1V6a1 1 0 0 1 1-1h3V4Z" stroke-linejoin="round"/></svg>
+                <h4 class="text-sm font-semibold uppercase tracking-wider">Solution no-code</h4>
+              </div>
+              <ul class="mt-4 space-y-2 text-sm texte-doux">
+                <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Base « Opérations » : état d'avancement, jalons, budgets</li>
+                <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Bases « Marchés » et « Factures » reliées aux opérations</li>
+                <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Suivi des TMA et avenants : statuts, pièces, impacts financiers</li>
+                <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Tableaux de bord : atterrissage, fonds propres, synthèse par opération</li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="flex items-center gap-3">
+                <svg class="h-6 w-6 shrink-0 accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M9 4.5H7A1.5 1.5 0 0 0 5.5 6v13A1.5 1.5 0 0 0 7 20.5h10a1.5 1.5 0 0 0 1.5-1.5V6A1.5 1.5 0 0 0 17 4.5h-2" stroke-linecap="round"/><rect x="9" y="2.5" width="6" height="4" rx="1.2"/><path d="m8.75 13.25 2.25 2.25 4.25-4.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <h4 class="text-sm font-semibold uppercase tracking-wider">Résultats (après)</h4>
+              </div>
+              <ul class="mt-4 space-y-2 text-sm texte-doux">
+                <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Une vue unique, partagée, exploitable par toute l'équipe</li>
+                <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Moins d'erreurs de saisie et moins de ressaisies</li>
+                <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Meilleur pilotage financier, avec alertes et vues de contrôle</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mt-8 flex gap-4 rounded-lg fond-voile p-5">
+            <svg class="h-6 w-6 shrink-0 accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17.5 9 11.5l4 4 8-8"/><path d="M15 7.5h6v6"/></svg>
+            <p class="text-sm leading-relaxed texte-doux">
+              <strong class="font-semibold text-[color:var(--noir)]">Évolutif —</strong>
+              nouveaux jalons, règles de contrôle, exports et automatisations s'ajoutent au fil
+              des besoins.
+            </p>
+          </div>
+        </article>
+
+        <!-- ---- CRM cabinet juridique ---- -->
+        <article data-reveal class="carte p-8">
+          <p class="text-sm font-semibold uppercase tracking-wider accent">CRM cabinet juridique</p>
+          <h3 class="mt-2 text-2xl font-bold">Suivi des dossiers &amp; facturation</h3>
+
+          <div class="mt-8 grid gap-8 sm:grid-cols-2">
+            <div>
+              <div class="flex items-center gap-3">
+                <svg class="h-6 w-6 shrink-0 accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="3.2" fill="currentColor" stroke="none"/></svg>
+                <h4 class="text-sm font-semibold uppercase tracking-wider">Situation (avant)</h4>
+              </div>
+              <ul class="mt-4 space-y-2 text-sm texte-doux">
+                <li class="flex gap-2"><span class="puce" aria-hidden="true">→</span> Suivi du chiffre d'affaires sur tableur</li>
+                <li class="flex gap-2"><span class="puce" aria-hidden="true">→</span> Aucune bibliothèque structurée pour les marques et noms de domaine</li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="flex items-center gap-3">
+                <svg class="h-6 w-6 shrink-0 accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="1.5"/><path d="M12 17v4M8 21h8" stroke-linecap="round"/><circle cx="8" cy="8.5" r="1.3"/><circle cx="16" cy="12.8" r="1.3"/><path d="m9.2 9.6 5.6 2.6" stroke-linecap="round"/></svg>
+                <h4 class="text-sm font-semibold uppercase tracking-wider">Objectif</h4>
+              </div>
+              <ul class="mt-4 space-y-2 text-sm texte-doux">
+                <li class="flex gap-2"><span class="puce" aria-hidden="true">→</span> Suivre les dossiers en cours, les temps à facturer, les factures et les relances</li>
+                <li class="flex gap-2"><span class="puce" aria-hidden="true">→</span> Créer une bibliothèque fiable — marques et domaines — avec documents intégrés</li>
+                <li class="flex gap-2"><span class="puce" aria-hidden="true">→</span> Mettre en avant les dépôts à renouveler</li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="flex items-center gap-3">
+                <svg class="h-6 w-6 shrink-0 accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M10 4a2 2 0 0 1 4 0v1h3a1 1 0 0 1 1 1v3h1a2 2 0 0 1 0 4h-1v3a1 1 0 0 1-1 1h-3v-1a2 2 0 0 0-4 0v1H7a1 1 0 0 1-1-1v-3H5a2 2 0 0 0 0-4h1V6a1 1 0 0 1 1-1h3V4Z" stroke-linejoin="round"/></svg>
+                <h4 class="text-sm font-semibold uppercase tracking-wider">Solution no-code</h4>
+              </div>
+              <ul class="mt-4 space-y-2 text-sm texte-doux">
+                <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Base « Dossiers » : statuts, échéances, responsables, pièces</li>
+                <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Suivi des temps : saisie simplifiée puis consolidation</li>
+                <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Base « Factures » et workflow de relance</li>
+                <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Bibliothèque « Marques &amp; Domaines » : images, documents, dates clés</li>
+                <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Mise en avant des renouvellements par vues et alertes</li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="flex items-center gap-3">
+                <svg class="h-6 w-6 shrink-0 accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M9 4.5H7A1.5 1.5 0 0 0 5.5 6v13A1.5 1.5 0 0 0 7 20.5h10a1.5 1.5 0 0 0 1.5-1.5V6A1.5 1.5 0 0 0 17 4.5h-2" stroke-linecap="round"/><rect x="9" y="2.5" width="6" height="4" rx="1.2"/><path d="m8.75 13.25 2.25 2.25 4.25-4.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <h4 class="text-sm font-semibold uppercase tracking-wider">Résultats (après)</h4>
+              </div>
+              <ul class="mt-4 space-y-2 text-sm texte-doux">
+                <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Vision claire du pipeline : dossiers, facturation, relances</li>
+                <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Réduction des oublis d'échéances et de renouvellements</li>
+                <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Données réutilisables et facilement auditables</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mt-8 flex gap-4 rounded-lg fond-voile p-5">
+            <svg class="h-6 w-6 shrink-0 accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17.5 9 11.5l4 4 8-8"/><path d="M15 7.5h6v6"/></svg>
+            <p class="text-sm leading-relaxed texte-doux">
+              <strong class="font-semibold text-[color:var(--noir)]">Évolutif —</strong>
+              modèles de documents, automatisations e-mail et reporting mensuel viennent
+              s'ajouter ensuite.
+            </p>
+          </div>
+        </article>
+
+        <!-- ---- CRM cabinet comptable ---- -->
+        <article data-reveal class="carte p-8">
+          <p class="text-sm font-semibold uppercase tracking-wider accent">CRM cabinet comptable</p>
+          <h3 class="mt-2 text-2xl font-bold">Suivi des échéances &amp; normalisation</h3>
+
+          <div class="mt-8 grid gap-8 sm:grid-cols-2">
+            <div>
+              <div class="flex items-center gap-3">
+                <svg class="h-6 w-6 shrink-0 accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="3.2" fill="currentColor" stroke="none"/></svg>
+                <h4 class="text-sm font-semibold uppercase tracking-wider">Situation (avant)</h4>
+              </div>
+              <ul class="mt-4 space-y-2 text-sm texte-doux">
+                <li class="flex gap-2"><span class="puce" aria-hidden="true">→</span> Échéances gérées sur des tableurs enregistrés sur des serveurs locaux</li>
+                <li class="flex gap-2"><span class="puce" aria-hidden="true">→</span> Duplications de suivi, absence de normalisation</li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="flex items-center gap-3">
+                <svg class="h-6 w-6 shrink-0 accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="1.5"/><path d="M12 17v4M8 21h8" stroke-linecap="round"/><circle cx="8" cy="8.5" r="1.3"/><circle cx="16" cy="12.8" r="1.3"/><path d="m9.2 9.6 5.6 2.6" stroke-linecap="round"/></svg>
+                <h4 class="text-sm font-semibold uppercase tracking-wider">Objectif</h4>
+              </div>
+              <ul class="mt-4 space-y-2 text-sm texte-doux">
+                <li class="flex gap-2"><span class="puce" aria-hidden="true">→</span> Structurer un référentiel client unique</li>
+                <li class="flex gap-2"><span class="puce" aria-hidden="true">→</span> Automatiser le suivi des obligations légales — TVA, IS, clôture — selon la fiche client</li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="flex items-center gap-3">
+                <svg class="h-6 w-6 shrink-0 accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M10 4a2 2 0 0 1 4 0v1h3a1 1 0 0 1 1 1v3h1a2 2 0 0 1 0 4h-1v3a1 1 0 0 1-1 1h-3v-1a2 2 0 0 0-4 0v1H7a1 1 0 0 1-1-1v-3H5a2 2 0 0 0 0-4h1V6a1 1 0 0 1 1-1h3V4Z" stroke-linejoin="round"/></svg>
+                <h4 class="text-sm font-semibold uppercase tracking-wider">Solution no-code</h4>
+              </div>
+              <ul class="mt-4 space-y-2 text-sm texte-doux">
+                <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Base « Clients » avec fiche client et données d'obligations légales</li>
+                <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Génération automatique d'un suivi d'échéances par service, selon les obligations sélectionnées</li>
+                <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Vues par service, par responsable, par période</li>
+                <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Tableaux de bord : charge, retards, contrôles</li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="flex items-center gap-3">
+                <svg class="h-6 w-6 shrink-0 accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M9 4.5H7A1.5 1.5 0 0 0 5.5 6v13A1.5 1.5 0 0 0 7 20.5h10a1.5 1.5 0 0 0 1.5-1.5V6A1.5 1.5 0 0 0 17 4.5h-2" stroke-linecap="round"/><rect x="9" y="2.5" width="6" height="4" rx="1.2"/><path d="m8.75 13.25 2.25 2.25 4.25-4.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <h4 class="text-sm font-semibold uppercase tracking-wider">Résultats (après)</h4>
+              </div>
+              <ul class="mt-4 space-y-2 text-sm texte-doux">
+                <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Moins de doublons et un meilleur contrôle interne</li>
+                <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Suivi d'échéances plus fiable et plus lisible</li>
+                <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> Outil extensible à d'autres services et obligations</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mt-8 flex gap-4 rounded-lg fond-voile p-5">
+            <svg class="h-6 w-6 shrink-0 accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17.5 9 11.5l4 4 8-8"/><path d="M15 7.5h6v6"/></svg>
+            <p class="text-sm leading-relaxed texte-doux">
+              <strong class="font-semibold text-[color:var(--noir)]">Évolutif —</strong>
+              relances internes, checklists de production et indicateurs de qualité peuvent être
+              ajoutés par la suite.
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= POURQUOI LE NO-CODE ================= -->
+  <section class="py-20 lg:py-24">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <div class="carte fond-voile flex flex-col gap-6 p-8 sm:flex-row sm:gap-8">
+        <span class="pastille h-12 w-12 shrink-0 bg-white">
+          <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 7.6v.6" stroke-linecap="round"/></svg>
+        </span>
+        <div>
+          <h2 class="text-2xl font-bold">Pourquoi le no-code est un bon choix</h2>
+          <p class="mt-3 text-sm leading-relaxed texte-doux">
+            Le no-code est particulièrement pertinent quand vous avez besoin d'un outil métier :
+          </p>
+          <ul class="mt-4 space-y-2 text-sm texte-doux">
+            <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> qui s'adapte à votre fonctionnement réel</li>
+            <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> qui évolue vite, sans tout redévelopper</li>
+            <li class="flex gap-2"><span class="puce" aria-hidden="true">✓</span> qui reste compréhensible et maintenable par vos équipes</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= MINI-DIAGNOSTIC ================= -->
+  <section class="fond-alt py-20 lg:py-24">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <div class="grid gap-14 lg:grid-cols-2 lg:items-center">
+        <div>
+          <p class="surtitre">Mini-diagnostic</p>
+          <h2 class="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">Quinze minutes suffisent</h2>
+          <p class="mt-4 text-lg texte-doux">
+            Un appel court, sans engagement, pour poser à plat ce que ferait votre outil. Vous
+            repartez avec la cartographie, que vous alliez plus loin avec nous ou non.
+          </p>
+          <a href="/contact" class="btn btn-primaire mt-8">Réserver un créneau</a>
+        </div>
+
+        <ul class="grid gap-4">
+          <li data-reveal class="carte p-6">
+            <h3 class="font-semibold">Vos objets clés</h3>
+            <p class="mt-2 text-sm leading-relaxed texte-doux">Clients, dossiers, opérations, factures, échéances.</p>
+          </li>
+          <li data-reveal class="carte p-6">
+            <h3 class="font-semibold">Vos étapes</h3>
+            <p class="mt-2 text-sm leading-relaxed texte-doux">Qui fait quoi, quand, et avec quel contrôle.</p>
+          </li>
+          <li data-reveal class="carte p-6">
+            <h3 class="font-semibold">Vos automatisations utiles</h3>
+            <p class="mt-2 text-sm leading-relaxed texte-doux">Alertes, relances, génération de documents.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= QUESTIONS FRÉQUENTES ================= -->
+  <section class="py-20 lg:py-24">
+    <div class="mx-auto max-w-3xl px-4 sm:px-6">
+      <p class="surtitre">Questions fréquentes</p>
+      <h2 class="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">Ce qu'on nous demande avant de démarrer</h2>
+
+      <div class="mt-10 space-y-4">
+        <details class="faq carte p-6" open>
+          <summary class="flex items-center justify-between gap-4 font-semibold">
+            Est-ce que c'est durable ?
+            <svg class="chevron h-5 w-5 accent shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M5.3 7.3a1 1 0 0 1 1.4 0L10 10.6l3.3-3.3a1 1 0 1 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 0-1.4Z"/></svg>
+          </summary>
+          <p class="mt-3 text-sm leading-relaxed texte-doux">
+            Oui. La clé, c'est une base de données bien pensée, doublée d'une gouvernance :
+            documentation, règles de saisie et droits d'accès.
+          </p>
+        </details>
+
+        <details class="faq carte p-6">
+          <summary class="flex items-center justify-between gap-4 font-semibold">
+            Sécurité et droits d'accès ?
+            <svg class="chevron h-5 w-5 accent shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M5.3 7.3a1 1 0 0 1 1.4 0L10 10.6l3.3-3.3a1 1 0 1 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 0-1.4Z"/></svg>
+          </summary>
+          <p class="mt-3 text-sm leading-relaxed texte-doux">
+            Nous définissons des rôles, des vues dédiées et des permissions adaptées à chaque
+            profil : chacun accède à ce dont il a besoin, et pas au reste.
+          </p>
+        </details>
+
+        <details class="faq carte p-6">
+          <summary class="flex items-center justify-between gap-4 font-semibold">
+            Peut-on migrer depuis Excel ou Drive ?
+            <svg class="chevron h-5 w-5 accent shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M5.3 7.3a1 1 0 0 1 1.4 0L10 10.6l3.3-3.3a1 1 0 1 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 0-1.4Z"/></svg>
+          </summary>
+          <p class="mt-3 text-sm leading-relaxed texte-doux">
+            Oui. Nous reprenons vos données historiques à partir de modèles que nous vous
+            fournissons — vous remplissez, nous importons.
+          </p>
+        </details>
+
+        <details class="faq carte p-6">
+          <summary class="flex items-center justify-between gap-4 font-semibold">
+            Comment se calcule le budget ?
+            <svg class="chevron h-5 w-5 accent shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M5.3 7.3a1 1 0 0 1 1.4 0L10 10.6l3.3-3.3a1 1 0 1 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 0-1.4Z"/></svg>
+          </summary>
+          <p class="mt-3 text-sm leading-relaxed texte-doux">
+            Selon le périmètre — objets, workflows, interfaces, intégrations — et le niveau
+            d'accompagnement souhaité. Le détail est sur la page
+            <a href="/tarifs" class="lien font-medium">Tarifs</a>.
+          </p>
+        </details>
+
+        <details class="faq carte p-6">
+          <summary class="flex items-center justify-between gap-4 font-semibold">
+            Et si nos process changent ?
+            <svg class="chevron h-5 w-5 accent shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M5.3 7.3a1 1 0 0 1 1.4 0L10 10.6l3.3-3.3a1 1 0 1 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 0-1.4Z"/></svg>
+          </summary>
+          <p class="mt-3 text-sm leading-relaxed texte-doux">
+            Justement : l'outil est fait pour évoluer avec vos pratiques. C'est tout l'intérêt du
+            no-code par rapport à un développement figé.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= APPEL À L'ACTION ================= -->
+  <section class="bande-accent">
+    <div class="mx-auto max-w-6xl px-4 py-16 text-center sm:px-6">
+      <h2 class="text-3xl font-bold tracking-tight">Votre process ressemble à l'un de ceux-là ?</h2>
+      <p class="mx-auto mt-3 max-w-xl text-lg texte-doux">Décrivez-le nous : nous vous dirons ce qu'un outil sur mesure changerait, et ce qu'il coûterait.</p>
+      <a href="/contact" class="btn btn-inverse mt-8">Demander un devis</a>
+    </div>
+  </section>
+
+</main>
+<footer class="border-t bordure fond-alt">
+  <div class="mx-auto max-w-6xl px-4 py-14 sm:px-6">
+    <div class="grid gap-10 md:grid-cols-4">
+      <div class="md:col-span-2">
+        <a href="/" class="inline-block" aria-label="Structurre — retour à l'accueil">
+          <img src="/assets/img/logo.svg" alt="Structurre" width="405" height="275" class="h-14 w-auto">
+        </a>
+        <p class="mt-5 max-w-sm text-sm leading-relaxed texte-doux">
+          Agence no-code. Nous concevons vos applications Airtable et Notion, puis nous
+          formons les équipes qui les utilisent au quotidien.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="text-sm font-semibold uppercase tracking-wider">Navigation</h2>
+        <ul class="mt-4 space-y-2.5 text-sm">
+          <li><a href="/" class="lien">Accueil</a></li>
+          <li><a href="/services" class="lien">Services</a></li>
+          <li><a href="/cas-clients" class="lien">Cas clients</a></li>
+          <li><a href="/outils" class="lien">Outils</a></li>
+          <li><a href="/formation" class="lien">Conception &amp; formation</a></li>
+          <li><a href="/tarifs" class="lien">Tarifs</a></li>
+          <li><a href="/a-propos" class="lien">À propos</a></li>
+          <li><a href="/contact" class="lien">Contact</a></li>
+          <li><a href="/mentions-legales" class="lien">Mentions légales</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="text-sm font-semibold uppercase tracking-wider">Contact</h2>
+        <ul class="mt-4 space-y-2.5 text-sm texte-doux">
+          <li>
+            <a href="https://wa.me/33680899625" class="lien font-medium" target="_blank" rel="noopener">WhatsApp · 06 80 89 96 25</a><br>
+            <span class="text-xs">La voie la plus rapide pour nous joindre</span>
+          </li>
+          <li><a href="mailto:simon@structurre.fr" class="lien">simon@structurre.fr</a></li>
+          <li><a href="tel:+33680899625" class="lien">06 80 89 96 25</a> (appel)</li>
+          <li>9 rue de l'Ehn<br>Strasbourg</li>
+          <li>Lun. – ven. · 9 h – 18 h</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-12 flex flex-col gap-3 border-t bordure pt-6 text-xs texte-doux sm:flex-row sm:items-center sm:justify-between">
+      <p>&copy; <span data-year>2026</span> Structurre. Tous droits réservés.</p>
+      <p>Site hébergé sur Cloudflare Pages · <a href="/mentions-legales" class="lien">Mentions légales</a></p>
+    </div>
+  </div>
+</footer>
+<script src="/assets/js/main.js?v=20260829-1" defer></script>
+</body>
+</html>
