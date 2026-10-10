@@ -17,6 +17,7 @@ Aucune base de données, aucun serveur : 100 % statique, 100 % gratuit.
 ├── tarifs.html             Grille tarifaire
 ├── contact.html            Formulaire + coordonnées
 ├── mentions-legales.html   Modèle à compléter
+├── conditions-daf.html     Conditions générales de la mission de DAF externalisée
 ├── 404.html                Page d'erreur
 ├── assets/
 │   ├── css/
@@ -70,7 +71,8 @@ d'applications métier, automatisations, et formation des utilisateurs. En compl
 mise en place d'outils taillés pour la structure est le pilier ; son volet pilotage est
 facturé **160 € HT de l'heure**. Ce taux est annoncé sur l'accueil (encart du haut de page,
 carte de service et JSON-LD), `services.html`, `daf-externalisee.html` et l'encart sous la
-grille de `tarifs.html` : à répercuter partout s'il change.
+grille de `tarifs.html`, ainsi qu'à l'article 7 de `conditions-daf.html` : à répercuter
+partout s'il change.
 
 Le modèle tarifaire est annoncé partout de la même façon — à ne modifier qu'à un seul endroit
 près, `tarifs.html`, puis à répercuter dans les rappels de `index.html`, `services.html` et
