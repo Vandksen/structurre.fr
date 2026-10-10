@@ -13,6 +13,7 @@ Aucune base de données, aucun serveur : 100 % statique, 100 % gratuit.
 ├── cas-clients.html        Exemples de réalisations + FAQ
 ├── outils.html             Airtable et Notion, comment choisir
 ├── formation.html          Conception + formation des utilisateurs
+├── daf-externalisee.html   Direction administrative et financière externalisée
 ├── tarifs.html             Grille tarifaire
 ├── contact.html            Formulaire + coordonnées
 ├── mentions-legales.html   Modèle à compléter
@@ -36,8 +37,8 @@ Aucune base de données, aucun serveur : 100 % statique, 100 % gratuit.
 
 ## Charte d'interface
 
-Huit pages en navigation : **Accueil**, **Services**, **Cas clients**, **Outils**,
-**Formation**, **Tarifs**, **À propos**, **Contact** (plus `mentions-legales.html` et `404.html`, accessibles par le pied de page mais
+Neuf pages en navigation : **Accueil**, **Services**, **Cas clients**, **Outils**,
+**Formation**, **DAF externalisée**, **Tarifs**, **À propos**, **Contact** (plus `mentions-legales.html` et `404.html`, accessibles par le pied de page mais
 hors navigation principale). Au-delà de 1024 px la navigation est déployée ; en dessous, elle
 passe dans le menu déroulant.
 
@@ -64,7 +65,12 @@ visuel d'accueil ; `favicon.svg` en reprend la silhouette, `og-image.svg` la vig
 ## Le contenu
 
 Le site présente une **agence no-code spécialisée Airtable et Notion** : conception
-d'applications métier, automatisations, et formation des utilisateurs.
+d'applications métier, automatisations, et formation des utilisateurs. En complément, une
+**direction administrative et financière externalisée** (`daf-externalisee.html`), dont la
+mise en place d'outils taillés pour la structure est le pilier ; son volet pilotage est
+facturé **150 € HT de l'heure**. Ce taux est annoncé sur l'accueil (encart du haut de page,
+carte de service et JSON-LD), `services.html`, `daf-externalisee.html` et l'encart sous la
+grille de `tarifs.html` : à répercuter partout s'il change.
 
 Le modèle tarifaire est annoncé partout de la même façon — à ne modifier qu'à un seul endroit
 près, `tarifs.html`, puis à répercuter dans les rappels de `index.html`, `services.html` et

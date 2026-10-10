@@ -28,8 +28,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="/assets/css/tailwind.css?v=20260829-1">
-<link rel="stylesheet" href="/assets/css/site.css?v=20260829-1">
+<link rel="stylesheet" href="/assets/css/tailwind.css?v=20261010-1">
+<link rel="stylesheet" href="/assets/css/site.css?v=20261010-1">
 </head>
 <body class="antialiased">
 <a href="#contenu" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-white focus:px-4 focus:py-2 focus:font-semibold focus:shadow-lg">Aller au contenu</a>
@@ -39,12 +39,13 @@
       <img src="/assets/img/logo.svg" alt="Structurre" width="405" height="275" class="h-11 w-auto sm:h-14">
     </a>
 
-    <nav class="hidden items-center gap-7 lg:flex" aria-label="Navigation principale">
+    <nav class="hidden items-center gap-4 lg:flex xl:gap-6" aria-label="Navigation principale">
       <a data-nav-link="index" href="/" class="lien-nav text-sm font-medium">Accueil</a>
       <a data-nav-link="services" href="/services" class="lien-nav text-sm font-medium">Services</a>
       <a data-nav-link="cas-clients" href="/cas-clients" class="lien-nav text-sm font-medium">Cas clients</a>
       <a data-nav-link="outils" href="/outils" class="lien-nav text-sm font-medium">Outils</a>
       <a data-nav-link="formation" href="/formation" class="lien-nav text-sm font-medium">Formation</a>
+      <a data-nav-link="daf-externalisee" href="/daf-externalisee" class="lien-nav text-sm font-medium" title="Direction administrative et financière externalisée">DAF</a>
       <a data-nav-link="tarifs" href="/tarifs" class="lien-nav text-sm font-medium">Tarifs</a>
       <a data-nav-link="a-propos" href="/a-propos" class="lien-nav text-sm font-medium">À propos</a>
       <a data-nav-link="contact" href="/contact" class="lien-nav text-sm font-medium">Contact</a>
@@ -80,6 +81,7 @@
       <a data-nav-link="cas-clients" href="/cas-clients" class="lien-menu px-3 py-3 text-base font-medium">Cas clients</a>
       <a data-nav-link="outils" href="/outils" class="lien-menu px-3 py-3 text-base font-medium">Outils</a>
       <a data-nav-link="formation" href="/formation" class="lien-menu px-3 py-3 text-base font-medium">Formation</a>
+      <a data-nav-link="daf-externalisee" href="/daf-externalisee" class="lien-menu px-3 py-3 text-base font-medium">DAF externalisée</a>
       <a data-nav-link="tarifs" href="/tarifs" class="lien-menu px-3 py-3 text-base font-medium">Tarifs</a>
       <a data-nav-link="a-propos" href="/a-propos" class="lien-menu px-3 py-3 text-base font-medium">À propos</a>
       <a data-nav-link="contact" href="/contact" class="lien-menu px-3 py-3 text-base font-medium">Contact</a>
@@ -102,7 +104,7 @@
     <div class="halo-bleu" aria-hidden="true"></div>
     <div class="relative mx-auto grid max-w-6xl items-center gap-14 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:py-24">
       <div>
-        <p class="surtitre">Agence no-code · Airtable &amp; Notion</p>
+        <p class="surtitre">Agence no-code · Airtable &amp; Notion · DAF externalisée</p>
         <h1 class="mt-4 text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
           Vos process deviennent des <span class="accent">outils que l'équipe utilise</span>
         </h1>
@@ -119,6 +121,18 @@
           <a href="/tarifs" class="btn btn-secondaire">Voir la grille tarifaire</a>
         </div>
         <p class="mt-6 text-sm texte-doux">1 800 € HT l'application, workflow complet · Réponse sous 48 h ouvrées</p>
+        <a href="/daf-externalisee" class="carte carte-interactive mt-6 block max-w-xl p-5">
+          <span class="block text-xs font-semibold uppercase tracking-wider accent">En complément</span>
+          <span class="mt-1.5 block font-semibold">Direction administrative et financière externalisée</span>
+          <span class="mt-1 block text-sm leading-relaxed texte-doux">
+            Des outils taillés pour votre structure, puis le pilotage de vos chiffres à temps
+            partagé : 150 € HT de l'heure.
+          </span>
+          <span class="lien-fleche mt-3 text-sm">
+            Découvrir la DAF externalisée
+            <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10.7 3.3a1 1 0 0 0-1.4 1.4L13.6 9H3a1 1 0 1 0 0 2h10.6l-4.3 4.3a1 1 0 1 0 1.4 1.4l6-6a1 1 0 0 0 0-1.4l-6-6Z"/></svg>
+          </span>
+        </a>
       </div>
 
       <div class="fond-voile flex aspect-[4/3] items-center justify-center rounded-xl border bordure p-8 sm:p-12">
@@ -159,11 +173,12 @@
         </h2>
         <p class="mt-4 text-lg texte-doux">
           Trois temps, un seul interlocuteur : on comprend votre process, on construit l'outil,
-          on vous apprend à le piloter.
+          on vous apprend à le piloter. Et, en complément, une direction administrative et
+          financière externalisée qui s'appuie sur ces outils.
         </p>
       </div>
 
-      <div class="mt-14 grid gap-6 md:grid-cols-3">
+      <div class="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
         <article data-reveal class="carte carte-interactive p-8">
           <span class="pastille h-12 w-12">
             <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 4h16v16H4zM4 9h16M9 9v11" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -204,6 +219,22 @@
             Quatre heures comprises dans le forfait, pas vendues en option.
           </p>
           <a href="/formation" class="lien-fleche mt-6 text-sm">
+            En savoir plus
+            <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10.7 3.3a1 1 0 0 0-1.4 1.4L13.6 9H3a1 1 0 1 0 0 2h10.6l-4.3 4.3a1 1 0 1 0 1.4 1.4l6-6a1 1 0 0 0 0-1.4l-6-6Z"/></svg>
+          </a>
+        </article>
+
+        <article data-reveal class="carte carte-interactive p-8">
+          <span class="pastille h-12 w-12">
+            <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 20V10m6 10V4m6 16v-7m4 7H2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <h3 class="mt-6 text-xl font-semibold">DAF externalisée</h3>
+          <p class="mt-3 text-sm leading-relaxed texte-doux">
+            Une direction administrative et financière à temps partagé, bâtie sur des outils
+            modernes taillés pour votre structure : trésorerie, budget, reporting.
+            150 € HT de l'heure.
+          </p>
+          <a href="/daf-externalisee" class="lien-fleche mt-6 text-sm">
             En savoir plus
             <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10.7 3.3a1 1 0 0 0-1.4 1.4L13.6 9H3a1 1 0 1 0 0 2h10.6l-4.3 4.3a1 1 0 1 0 1.4 1.4l6-6a1 1 0 0 0 0-1.4l-6-6Z"/></svg>
           </a>
@@ -373,19 +404,33 @@
     "name": "Simon Bazart-Maitre",
     "url": "https://structurre.fr/a-propos"
   },
-  "description": "Agence no-code : conception d'applications métier sur Airtable et Notion, automatisations et formation des utilisateurs.",
+  "description": "Agence no-code : conception d'applications métier sur Airtable et Notion, automatisations, formation des utilisateurs et direction administrative et financière externalisée.",
   "areaServed": "FR",
-  "knowsAbout": ["Airtable", "Notion", "no-code", "automatisation"],
-  "offers": {
-    "@type": "Offer",
-    "name": "Application no-code couvrant un workflow complet, 4 h de formation comprises",
-    "priceSpecification": {
-      "@type": "PriceSpecification",
-      "price": "1800",
-      "priceCurrency": "EUR",
-      "valueAddedTaxIncluded": false
+  "knowsAbout": ["Airtable", "Notion", "no-code", "automatisation", "direction administrative et financière externalisée"],
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Application no-code couvrant un workflow complet, 4 h de formation comprises",
+      "priceSpecification": {
+        "@type": "PriceSpecification",
+        "price": "1800",
+        "priceCurrency": "EUR",
+        "valueAddedTaxIncluded": false
+      }
+    },
+    {
+      "@type": "Offer",
+      "name": "Direction administrative et financière externalisée",
+      "url": "https://structurre.fr/daf-externalisee",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "150",
+        "priceCurrency": "EUR",
+        "unitCode": "HUR",
+        "valueAddedTaxIncluded": false
+      }
     }
-  }
+  ]
 }
 </script>
 <footer class="border-t bordure fond-alt">
@@ -409,6 +454,7 @@
           <li><a href="/cas-clients" class="lien">Cas clients</a></li>
           <li><a href="/outils" class="lien">Outils</a></li>
           <li><a href="/formation" class="lien">Conception &amp; formation</a></li>
+          <li><a href="/daf-externalisee" class="lien">DAF externalisée</a></li>
           <li><a href="/tarifs" class="lien">Tarifs</a></li>
           <li><a href="/a-propos" class="lien">À propos</a></li>
           <li><a href="/contact" class="lien">Contact</a></li>
