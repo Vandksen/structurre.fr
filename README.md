@@ -68,7 +68,7 @@ Le site présente une **agence no-code spécialisée Airtable et Notion** : conc
 d'applications métier, automatisations, et formation des utilisateurs. En complément, une
 **direction administrative et financière externalisée** (`daf-externalisee.html`), dont la
 mise en place d'outils taillés pour la structure est le pilier ; son volet pilotage est
-facturé **150 € HT de l'heure**. Ce taux est annoncé sur l'accueil (encart du haut de page,
+facturé **160 € HT de l'heure**. Ce taux est annoncé sur l'accueil (encart du haut de page,
 carte de service et JSON-LD), `services.html`, `daf-externalisee.html` et l'encart sous la
 grille de `tarifs.html` : à répercuter partout s'il change.
 
@@ -78,11 +78,11 @@ près, `tarifs.html`, puis à répercuter dans les rappels de `index.html`, `ser
 
 - **1 800 € HT** l'application couvrant un workflow complet, **4 heures de formation
   comprises** ;
-- **100 à 150 € HT de l'heure** pour les évolutions ultérieures et les heures de formation
+- **100 à 125 € HT de l'heure** pour les évolutions ultérieures et les heures de formation
   supplémentaires, sans abonnement ;
 - règlement : acompte de **30 % au démarrage**, solde à la mise en production.
 
-Les trois paliers horaires (100 / 125 / 150 €) et l'unité facturée (« un workflow complet »)
+Les deux paliers horaires (100 / 125 €) et l'unité facturée (« un workflow complet »)
 sont définis sur `tarifs.html` : c'est ce qui rend le prix défendable en rendez-vous.
 
 Le site précise explicitement que les heures de formation relèvent de la mission de conception
