@@ -66,12 +66,12 @@ visuel d'accueil ; `favicon.svg` en reprend la silhouette, `og-image.svg` la vig
 ## Le contenu
 
 Le site présente une **agence no-code spécialisée Airtable et Notion** : conception
-d'applications métier, automatisations, et formation des utilisateurs. En complément, une
+d'applications métier, automatisations, formation des utilisateurs et, au même niveau, une
 **direction administrative et financière externalisée** (`daf-externalisee.html`), dont la
 mise en place d'outils taillés pour la structure est le pilier ; son volet pilotage est
-facturé **160 € HT de l'heure**. Ce taux est annoncé sur l'accueil (encart du haut de page,
-carte de service et JSON-LD), `services.html`, `daf-externalisee.html` et l'encart sous la
-grille de `tarifs.html`, ainsi qu'à l'article 7 de `conditions-daf.html` : à répercuter
+facturé **160 € HT de l'heure**. Ce taux est annoncé sur l'accueil (meta description, ligne
+sous les boutons du haut de page et JSON-LD), `services.html`, `daf-externalisee.html` et la
+4ᵉ carte de la grille de `tarifs.html` (avec sa meta description), ainsi qu'à l'article 7 de `conditions-daf.html` : à répercuter
 partout s'il change.
 
 Le modèle tarifaire est annoncé partout de la même façon — à ne modifier qu'à un seul endroit
